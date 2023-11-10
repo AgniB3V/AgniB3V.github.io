@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+  <meta charset="UTF-8">
+  {% seo %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <style>
+    .subnav {
+      /* float: left; */
+      /* overflow: hidden; */
+    }
+    
+    .subnav .subnavbtn {
+      border: none;
+      background-color: initial;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .subnav-content {
+      display: none;
+      width: 100%;
+    }
+    
+    .subnav-content a {
+      float: left;
+      color: inherit;
+      text-decoration: none;
+      margin-left: 10px;
+      margin-top: 6px;
+      background-color: initial;
+    }
+    
+    .subnav-content a:hover {
+      background-color: initial;
+      color: black;
+    }
+    
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+
+    .subnavbtnfirst {
+      color: currentColor;
+    }
+
+    .subnavbtnfirst:hover {
+      text-decoration: none;
+      background-color: initial;
+      color: black;
+    }
+    </style>
+</head>
+
+<body>
+
+  <header class="page-header" role="banner" style="height: 360px;">
+    <h1 class="project-name" style="margin-top: -55px;align-items: center;display: inline-flex;">
+      <b>{{ site.title | default: page.title }}</b>
+    </h1>
+    <h2 class="project-tagline">{{ page.description | default: site.description}}</h2>
+    {% if site.github %}
+    <a href="https://github.com/JulianVentura/TrabajoProfesional" class="btn" target="_blank">Ver en GitHub</a>
+    {% endif %}
+
+    <a href="./" class="btn" title="Inicio">Inicio</a>
+    <div class="btn subnav">
+      <button class="subnavbtn"><a href="./manuales.html" class="subnavbtnfirst">Manuales</a></button>
+      <div class="subnav-content">
+        <a href="./manual_usuario.html" title="Manual de Usuario">Manual de Usuario</a>
+        <a href="./manual_tecnico.html" title="Manual Técnico">Manual Técnico</a>
+      </div>
+    </div> 
+  </header>
+
+  <main id="content" class="main-content" role="main">
+    {{ content }}
+
+    <footer class="site-footer">
+    </footer>
+  </main>
+</body>
+
+</html>
