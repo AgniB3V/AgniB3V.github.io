@@ -1,0 +1,6 @@
+[book]
+authors = ["Franco Barreneche", "Gianluca Belinche", "Guido Botta", "Julian Ventura"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Thermal B3V"
