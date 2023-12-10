@@ -4,6 +4,3 @@ FreeCAD es una aplicación libre de diseño asistido por computadora. Es la apli
 
 FreeCAD se encuentra bajo una [licencia LGPL2+](https://es.wikipedia.org/wiki/GNU_Lesser_General_Public_License). La licencia se encuentra en https://github.com/FreeCAD/FreeCAD/blob/main/LICENSE. Para más información, visitar https://wiki.freecad.org/Licence/en.
 
-## Creación del Modelo
-
-
