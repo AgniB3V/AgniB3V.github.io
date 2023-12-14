@@ -19,5 +19,5 @@
 
 [Manual Técnico](./technical_manual/technical_manual.md)
 
-Benchmarks
+[Benchmarks](./benchmarks/benchmarks.md)
 - [Accuracy Tests](./benchmarks/accuracy_tests/accuracy_tests.md)
