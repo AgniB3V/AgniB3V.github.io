@@ -19,5 +19,8 @@
 
 [Manual Técnico](./technical_manual/technical_manual.md)
 
+- [Modelo teórico](./technical_manual/theorical_model/theorical_model.md)
+
 [Benchmarks](./benchmarks/benchmarks.md)
+
 - [Accuracy Tests](./benchmarks/accuracy_tests/accuracy_tests.md)
