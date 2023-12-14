@@ -18,3 +18,6 @@
 - [Plotter](./user_manual/plotter/plotter.md)
 
 [Manual Técnico](./technical_manual/technical_manual.md)
+
+Benchmarks
+- [Accuracy Tests](./benchmarks/accuracy_tests/accuracy_tests.md)
