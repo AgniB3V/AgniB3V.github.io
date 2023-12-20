@@ -4,3 +4,5 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Thermal B3V"
+[output.html]
+mathjax-support = true
