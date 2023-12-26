@@ -10,29 +10,27 @@ El calor se transfiere de 3 maneras:
 *   Conducción
 *   Radiación
 
-Dado que la densidad del aire a altitudes muy elevadas es extremadamente baja, desde la órbita terrestre baja (LEO) en adelante, el aire disponible para la refrigeración natural es insignificante. La transferencia de calor en el espacio está principalmente controlada por la conducción y la radiación.
+Dado que la densidad del aire a altitudes muy elevadas es extremadamente baja, desde la órbita terrestre baja (LEO) en adelante, el aire disponible para la refrigeración natural es insignificante, por lo que no hay convección. La transferencia de calor en el espacio está principalmente controlada por la conducción y la radiación.
 
 Sin convección natural para enfriar la electrónica, un sistema que funciona con la misma potencia en el espacio es más probable que alcance una temperatura más alta en comparación con uno que opera a nivel del mar.
 
 ### Transferencia de Calor por Conducción
 
-La transferencia de calor puede ocurrir dentro de un material o entre dos o más cuerpos en contacto. Está dada por la Ley de Fourier:
+La transferencia de calor puede ocurrir dentro de un material o entre dos o más cuerpos en contacto. Está dada por la Ley de Fourier, en una dimensión:
 
 ![](images/image4.png)
 
-*   Q es la tasa de flujo de calor (W)
-*   k es la conductividad térmica (W/mK) del material
+*   q es la tasa de flujo de calor ($\frac{W}{m^2}$)
+*   k es la conductividad térmica ($\frac{W}{m *K}$) del material
 *   dT/dx es la diferencia de temperatura a lo largo de la longitud
 
 A diferencia del modo de transferencia de calor por convección, la resistencia a la conducción dentro del sólido no cambia con la altitud.
 
-La resistencia térmica es una medida de la resistencia al flujo de calor entre cuerpos en contacto a través del material de interfaz térmica, como almohadillas térmicas o materiales de unión adhesiva. La resistencia térmica, a menudo expresada en °C/W o K/W, se encuentra mediante:
+En el caso más general, la ecuación se expresa en forma diferencial
 
-![](images/image5.png)
+$c p \frac {\partial T}{\partial t} = k * (\frac {\partial^2 T}{\partial x^2} + \frac {\partial^2 T }{\partial y^2}  + \frac {\partial^2 T }{\partial z^2}) + q_v$
 
-*   AC es el área transversal disponible para la conducción
-
-Ej, si la resistencia térmica de un paquete de circuito integrado es de 2.5 °C/W, la temperatura ambiente es de 25°C y el chip consume 2 W de energía, entonces la temperatura esperada del dispositivo sería de 30°C.
+Siendo c el calor específico, p la densidad y $q_v$ el calor generado
 
 ### Transferencia de Calor por Radiación
 
