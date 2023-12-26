@@ -141,4 +141,12 @@ Y $(b^e_3)^2 + (c^e_3)^2$ es la distancia al cuadrado entre el vertice 1 y el ve
 
 Luego, 
 
-$(b^e_1 * b^e_2) + (c^e_1 * c^e_2)$
+$(b^e_1 * b^e_2) + (c^e_1 * c^e_2)$ se puede interpretar como el producto escalar entre dos vectores, el primero es el que une el vertice 2 y el 3, y el segundo el que une el vertice 3 y 1
+
+Analogamente
+
+$(b^e_1 * b^e_3) + (c^e_1 * c^e_3)$ se puede interpretar como el producto escalar entre dos vectores, el primero es el que une el vertice 2 y el 3, y el segundo el que une el vertice 1 y 2
+
+$(b^e_2 * b^e_3) + (c^e_2 * c^e_3)$ se puede interpretar como el producto escalar entre dos vectores, el primero es el que une el vertice 3 y el 1, y el segundo el que une el vertice 1 y 2
+
+Por lo tanto, todos estos calculos pueden realizarse a partir de las coordenadas de los vertices en 3D.
