@@ -14,6 +14,7 @@
 #Technical Manual
 - [Manual Técnico](./technical_manual/technical_manual.md)
   - [Modelo teórico](./technical_manual/theorical_model/theorical_model.md)
+  - [Modelo FEM](./technical_manual/fem/fem.md)
   - [Preprocessor](./technical_manual/preprocessor/preprocessor.md)
 #Benchmarks
 - [Benchmarks](./benchmarks/benchmarks.md)
