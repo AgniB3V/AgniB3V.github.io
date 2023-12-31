@@ -462,3 +462,34 @@ Luego de 10 segundos, la placa de 300 K esta a u[\[f\]](#cmnt6)na temperatura de
 
 Al igual que con las pruebas anteriores se observa una leve diferencia en la placa más fría.
 
+Parte III: Conservación de la Energía
+--------------------------------
+
+Se realizaron calculos de conservación de la energia de la siguiente manera:
+
+Para cada instante de tiempo, se calculo la energia del sistema como la sumatoria para cada nodo de:
+
+$E = T * c * p * th * a$
+
+Siendo
+- T temperatura del nodo 
+
+- c calor especifico 
+
+- p densidad
+
+- th grosor
+
+- a area del nodo
+
+El area del nodo se calcula como la sumatoria de las areas de los elementos a los que pertenece el nodo, divido 3, dividido la cantidad de elementos a los que pertenece.
+
+Luego se realiza la resta de las energias entre instantes consecutivos para obtener la diferencia de energias.
+
+A esto se le suma el flujo (entrante y saliente) entre esos instantes para cada nodo.
+
+Se obtuvo el siguiente resultado:
+
+![](images/energy_diff.png)
+
+Se puede observar que se conserva la energia a lo largo de la simulación.
