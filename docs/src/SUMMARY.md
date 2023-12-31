@@ -18,4 +18,5 @@
   - [Preprocessor](./technical_manual/preprocessor/preprocessor.md)
 #Benchmarks
 - [Benchmarks](./benchmarks/benchmarks.md)
-  - [Accuracy Tests](./benchmarks/accuracy_tests/accuracy_tests.md)
+  - [Tests de Precisión](./benchmarks/accuracy_tests/accuracy_tests.md)
+  - [Tests de Tiempo de Ejecución](./benchmarks/execution_time_tests/execution_time_tests.md)
