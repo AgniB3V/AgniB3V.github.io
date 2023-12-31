@@ -469,7 +469,7 @@ Se realizaron calculos de conservación de la energia de la siguiente manera:
 
 Para cada instante de tiempo, se calculo la energia del sistema como la sumatoria para cada nodo de:
 
-$E = T * c * p * th * a$
+\\(E = T * c * p * th * a\\)
 
 Siendo
 - T temperatura del nodo 
