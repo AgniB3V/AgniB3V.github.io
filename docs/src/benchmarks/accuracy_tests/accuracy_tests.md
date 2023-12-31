@@ -493,3 +493,117 @@ Se obtuvo el siguiente resultado:
 ![](images/energy_diff.png)
 
 Se puede observar que se conserva la energia a lo largo de la simulación.
+
+Parte IV: Convergencia
+--------------------------------
+
+Se realizaron simulaciones en distintas condiciones de mesh y time_step del siguiente modelo:
+
+![](images/image125.png) ![](images/image127.png) ![](images/image131.png)
+
+Se tomaron los siguientes puntos para las comparaciones:
+
+Centro del panel:
+
+![](images/image132.png) 
+
+Piramide oculta:
+
+![](images/image136.png) 
+
+Cara Interior:
+
+![](images/image141.png)
+
+### Convergencia en tiempo
+
+Se realizaron simulaciones con time_steps de 1, 10 y 100 segundos
+
+Los resultados obtenidos fueron los siguientes:
+
+Centro del panel:
+
+![](images/time_convergence_Center%20of%20Panel.png) 
+
+Piramide oculta:
+
+![](images/time_convergence_Hidden%20Pyramid.png) 
+
+Cara Interior:
+
+![](images/time_convergence_Interior%20Face.png)
+
+El error relativo comparando con la simulación de time_step 1 segundo fue el siguiente (0 sin error, 1 100% de error):
+
+Centro del panel:
+
+![](images/time_convergence_relative_error_Center%20of%20Panel.png) 
+
+Piramide oculta:
+
+![](images/time_convergence_relative_error_Hidden%20Pyramid.png) 
+
+Cara Interior:
+
+![](images/time_convergence_relative_error_Interior%20Face.png)
+
+La desviación estandar comparando con la simulación de time_step 1 segundo fue la siguiente:
+
+Centro del panel:
+
+![](images/time_convergence_std_deviation_Center%20of%20Panel.png) 
+
+Piramide oculta:
+
+![](images/time_convergence_std_deviation_Hidden%20Pyramid.png) 
+
+Cara Interior:
+
+![](images/time_convergence_std_deviation_Interior%20Face.png)
+
+### Convergencia en malla
+
+Se realizaron simulaciones con mallas de 622, 1178, 2841 y 5539 elementos.
+
+Los resultados obtenidos fueron los siguientes:
+
+Centro del panel:
+
+![](images/mesh_convergence_Center%20of%20Panel.png) 
+
+Piramide oculta:
+
+![](images/mesh_convergence_Hidden%20Pyramid.png) 
+
+Cara Interior:
+
+![](images/mesh_convergence_Interior%20Face.png)
+
+El error relativo comparando con la simulación de 5539 elementos fue el siguiente (0 sin error, 1 100% de error):
+
+Centro del panel:
+
+![](images/mesh_convergence_relative_error_Center%20of%20Panel.png) 
+
+Piramide oculta:
+
+![](images/mesh_convergence_relative_error_Hidden%20Pyramid.png) 
+
+Cara Interior:
+
+![](images/mesh_convergence_relative_error_Interior%20Face.png)
+
+La desviación estandar comparando con la simulación de 5539 elementos fue la siguiente:
+
+Centro del panel:
+
+![](images/mesh_convergence_std_deviation_Center%20of%20Panel.png) 
+
+Piramide oculta:
+
+![](images/mesh_convergence_std_deviation_Hidden%20Pyramid.png) 
+
+Cara Interior:
+
+![](images/mesh_convergence_std_deviation_Interior%20Face.png)
+
