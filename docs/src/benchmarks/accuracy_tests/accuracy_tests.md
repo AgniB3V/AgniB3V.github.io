@@ -43,7 +43,7 @@ Luego de 2000 segundos, las temperaturas varían entre 280 K (7 C) y 382 K (109 
 
 Luego de 6000 segundos, las temperaturas varían entre 314 K (41 C) y 332 K (59 C)
 
-![](images/image83.png)
+![](images/conduction_Prueba1.png)
 
 Se puede observar que a los 15000 segundos, se llega al mismo resultado de 323 K (50 C)
 
@@ -97,7 +97,7 @@ Por lo tanto el cambio de temperatura luego de 200 segundos es:
 
 Resultados Solver:
 
-![](images/image100.png)
+![](images/conduction_Prueba2.png)
 
 Luego de 200 segundos de simulación, se llega a una temperatura de 289.46 K (16.46 C)
 
@@ -143,7 +143,7 @@ Luego de 1000000 de segundos, la temperatura está entre 277 K (4 C) y 419 K (14
 
 Luego de 2000000 segundos, la temperatura se encuentra entre 300 K (27 C) y 392 K (119 C)
 
-![](images/image90.png)
+![](images/conduction_Prueba3.png)
 
 Se puede observar que a los 20000000 de segundos se estabilizó en la misma temperatura de 356.9 K (83.9 C)
 
@@ -191,7 +191,7 @@ Luego de 1000 segundos de simulación, se llegó a una temperatura entre 274 K (
 
 Luego de 2400 segundos de simulación, se llegó a una temperatura entre 287 K (14 C) y 387 K (114 C)
 
-![](images/image94.png)
+![](images/conduction_Prueba4.png)
 
 Se puede observar que a los 18000 de segundos se estabilizó en la misma temperatura de 336.6 K (63.6 C)
 
@@ -245,7 +245,7 @@ Luego de 2000 segundos de simulación, la cara de cobre tiene una temperatura de
 
 Se puede observar como en el borde la cara de cobre con el roble hay conducción de calor.
 
-![](images/image66.png)
+![](images/conduction_Prueba5.png)
 
 Las líneas amarillas representan el roble, las rojas el cobre, y las demás la frontera entre ambas.
 
