@@ -99,7 +99,7 @@ Se divide en dos subsecciones.  "elements", en donde se indica un array con los 
 
 Se divide en dos subsecciones.  "elements", en donde se indica un array con los ids de los elementos a los que correspondenen y "properties", donde se especifican las condiciones específicas:
 
-* "flux": Flujo constante incidente (\\(W\\)).
+* "flux": Flujo constante incidente ($\frac{W}{m^2}$).
 * "initial_temperature": Temperatura inicial (\\(K\\)).
 * "two_sides_emission": Indica si deben considerarse la orientación de las caras del modelo al proyectar rayos elemento a elemento.
 
