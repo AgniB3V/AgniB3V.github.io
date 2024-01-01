@@ -33,19 +33,32 @@ El archivo properties.json presenta tres secciones principales "global_propertie
 
 ```
 "global_properties": {
-    "internal_emission": false,
+    "albedo": 0.2,
+    "earth_ir": 225.0,
+    "solar_constant": 1361.0,
+    "initial_temperature": 200.0,
     "element_ray_amount": 5000,
     "earth_ray_amount": 5000,
     "element_max_reflections_amount": 3,
     "orbit_divisions": 15,
+    "simulation_time": 86400.0,
+    "time_step": 10.0,
+    "snap_period": 25.0
 }
 ```
 
-* "internal_emmision" indica si por defecto deben considerarse la orientación de las caras del modelo al proyectar rayos elemento a elemento.
+* "albedo": Fracción de la luz solar recibida por la Tierra que es reflejada. Escalar positivo menor a uno.
+* "earth_ir": Radiación infrarroja terrestre (\\( \frac{W}{m^2}\\)).
+* "solar_constant": Radiación solar (\\( \frac{W}{m^2}\\)).
+* "initial_temperature": Temperatura inicial por defecto. Puede ser sobreescrita por las condiciones (\\( K \\)).
+
 * "element_ray_amount" y "earth_ray_amount" establecen la cantidad de rayos a utilizar por elemento para radiación elemento-elemento y elemento-tierra (albedo e ir), respectivamente.
 * "element_max_reflection_amount" es el límite de reflexiones  en radiación elemento a elemento.
 * "orbit_divisions" establece la cantidad de puntos de la órbita a considerar, aunque es posible que se tomen menos puntos si los puntos de referencia que calcula GMAT se encuentran muy concentrados en algunas secciones.
 
+* "simulation_time": Tiempo total a simular (\\( s \\)).
+* "time_step": Intervalo de discretización. Valores más pequeños aumentan la presición, a costa de aumentar el tiempo de cálculo total (\\( s \\)).
+* "snap_period": Intervalo de muestreo de resultados. El tiempo total debe ser múltiplo de él (\\( s \\)).
 
 
 ### Materiales
@@ -57,11 +70,9 @@ El archivo properties.json presenta tres secciones principales "global_propertie
             "thermal_conductivity": 0.0,
             "specific_heat": 900.0,
             "density": 2700.0,
-            "flux": 0.0,
             "thickness": 0.05,
             "alpha_sun": 1.0,
             "alpha_ir": 1.0,
-            "initial_temperature": 273.15,
        }
        "materialB": { ... }
     },
@@ -86,9 +97,12 @@ Se divide en dos subsecciones.  "elements", en donde se indica un array con los 
 "conditions": {
     "properties": {
         "conditionA": {
-            "flux": 0.0,
+            "flux_on": true,
+            "flux": 100.0,
+            "initial_temperature_on": true,
             "initial_temperature": 273.15,
-            "two_sides_emission": true,
+            "two_sides_radiation": true
+            "flux": 10.0
        }
     },
     "elements": {
@@ -99,9 +113,11 @@ Se divide en dos subsecciones.  "elements", en donde se indica un array con los 
 
 Se divide en dos subsecciones.  "elements", en donde se indica un array con los ids de los elementos a los que correspondenen y "properties", donde se especifican las condiciones específicas:
 
-* "flux": Flujo constante incidente ($\frac{W}{m^2}$).
-* "initial_temperature": Temperatura inicial (\\(K\\)).
-* "two_sides_emission": Indica si deben considerarse la orientación de las caras del modelo al proyectar rayos elemento a elemento.
+* "flux_on": Considerar valor de flujo inicidente. Booleano.
+* "flux": Flujo constante incidente (\\( \frac{W}{m^2}\\)).
+* "initial_temperature_on": Considerar valor de temperatura inicial. Booleano.
+* "initial_temperature": Temperatura inicial del elemento(\\(K\\)).
+* "two_sides_emission": Indica si debe considerarse la orientación del elemento (dirección de su normal según la regla de la mano derecha) al proyectar rayos elemento a elemento.
 
 ## Procesamiento de factores de vista
 
