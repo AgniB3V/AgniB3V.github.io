@@ -1,4 +1,4 @@
-# User GUI
+# Graphical User Interface
 
 Se ofrece una herramienta gráfica para la creación de proyectos y la utilización de las distintas herramientas del paquete.
 
