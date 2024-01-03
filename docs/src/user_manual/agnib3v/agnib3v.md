@@ -12,3 +12,20 @@ Agni B3V es un paquete de herramientas diseñado para facilitar la realización 
 - [Plotter](/user_manual/plotter/plotter.md): Herramienta que permite visualizar los resultados en graficos de temperatura vs tiempo.
 
 Cada una de estas herramientas pueden ser utilizadas de manera independiente o en conjunta a través de la GUI.
+
+Este trabajo fue realizado bajo el marco del Trabajo Profesional de Ingeniería Informática de la Univesidad de Buenos Aires.
+
+El equipo que realizo este proyecto esta formado por:
+
+- Barreneche Franco
+- Belinche Gianluca
+- Botta Guido
+- Ventura Julian
+
+Se deja a discreción del usuario la correctitud de los resultados generados por el presente software.
+
+Dicho esto, a continuación se presentan las limitaciones actuales del mismo:
+
+- Solo se permiten orbitas circulares
+- La aptitud del satélite solo puede ser Sun Pointing
+- El albedo presenta un error mayor al de las demás interacciones, por lo que se debe tener especial atención en simulaciones donde este sea el componente principal. 
