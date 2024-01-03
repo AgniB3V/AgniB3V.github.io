@@ -4,13 +4,14 @@ Modelo teórico
 Transferencia de Calor
 ----------------------
 
-El calor se transfiere de 3 maneras:
+En lineas generales, la transferencia de calor puede explicarse a través de 3 fenómenos distintos:
 
-*   Convección
-*   Conducción
-*   Radiación
+* Convección
+* Conducción
+* Radiación
 
-Dado que la densidad del aire a altitudes muy elevadas es extremadamente baja, desde la órbita terrestre baja (LEO) en adelante, el aire disponible para la refrigeración natural es insignificante, por lo que no hay convección. La transferencia de calor en el espacio está principalmente controlada por la conducción y la radiación.
+Dado que la densidad del aire a altitudes muy elevadas es extremadamente baja, a partir de órbitas terrestres bajas (LEO) en adelante la transferencia de calor es, practicamente en su totalidad, debida a la conducción y radiación.
+Es por esto que, es posible omitir el fenómeno de convección en el modelo.
 
 Sin convección natural para enfriar la electrónica, un sistema que funciona con la misma potencia en el espacio es más probable que alcance una temperatura más alta en comparación con uno que opera a nivel del mar.
 
@@ -18,97 +19,137 @@ Sin convección natural para enfriar la electrónica, un sistema que funciona co
 
 La transferencia de calor puede ocurrir dentro de un material o entre dos o más cuerpos en contacto. Está dada por la Ley de Fourier, en una dimensión:
 
-\\(q^{''}_x = -k \frac{dT}{dx}\\)
+\\[
+q^{''}_x = -k \frac{dT}{dx}
+\\]
 
-*   q es la tasa de flujo de calor (\\(\frac{W}{m^2}\\))
-*   k es la conductividad térmica (\\(\frac{W}{m *K}\\)) del material
-*   \\(\frac{dT}{dx}\\) es la diferencia de temperatura a lo largo de la longitud
+Donde:
 
-A diferencia del modo de transferencia de calor por convección, la resistencia a la conducción dentro del sólido no cambia con la altitud.
+* \\(q\\) es la tasa de flujo de calor (\\(\frac{W}{m^2}\\))
+* \\(k\\) es la conductividad térmica (\\(\frac{W}{m *K}\\)) del material
+* \\(\frac{dT}{dx}\\) es la diferencia de temperatura a lo largo de la longitud
 
 En el caso más general, la ecuación se expresa en forma diferencial
 
-\\(c p \frac {\partial T}{\partial t} = k * (\frac {\partial^2 T}{\partial x^2} + \frac {\partial^2 T }{\partial y^2}  + \frac {\partial^2 T }{\partial z^2}) + q_v\\)
+\\[
+c p \frac {\partial T}{\partial t} = 
+k \ (\frac {\partial^2 T}{\partial x^2} + 
+\frac {\partial^2 T }{\partial y^2} + 
+\frac {\partial^2 T }{\partial z^2}) + q_v
+\\]
 
-Siendo c el calor específico, p la densidad y \\(q_v\\) el calor generado
+Donde:
+
+* \\(c\\) es el calor específico \\([\frac{J}{Kg \ K}]\\)
+* \\(p\\) la densidad \\([\frac{Kg}{m^3}]\\)
+* \\(q_v\\) el calor generado \\([\frac{W}{m^3}]\\)
 
 ### Transferencia de Calor por Radiación
 
 La transferencia de calor por radiación ocurre entre dos o más superficies a través de ondas electromagnéticas. Depende de la temperatura y del revestimiento de la superficie radiante.
-Un cuerpo negro es el emisor más eficiente, la radiación que emite a una temperatura T (K) sigue la Ley de Stefan-Boltzmann:
+El tipo de emisor más eficiente es conocido como cuerpo negro. La radiación que emite por unidad de área a una temperatura dada sigue la Ley de Stefan-Boltzmann.
 
-\\( E = \sigma T^4 \\)
+\\[ 
+E = \sigma \ T^4 
+\\]
 
-*   σ es la constante de Stefan-Boltzmann -> \\(5.63 * 10^{-8} \frac{W}{m^2 K^4}\\)
-*   E es el calor emitido por unidad de area por un cuerpo negro \\([\frac{W}{m^2}]\\)
+Donde:
 
-Si multiplicamos por el area radiante, obtenemos:
+* \\(σ\\) es la constante de Stefan-Boltzmann (\\(5.63 \times 10^{-8} \frac{W}{m^2 K^4}\\))
+* \\(T\\) es la temperatura del cuerpo negro \\([K]\\)
 
-\\( E_r = A^r \sigma T^4 \\)
+Multiplicando por el area radiante \\(A^r\\), se obtendrá el calor absoluto emitido por el cuerpo negro \\(E_r [W]\\):
 
-*  \\(E_r\\) es el calor absoluto emitido por un cuerpo negro [W]
+\\[ 
+E_r = A^r \sigma \ T^4 
+\\]
 
-Un cuerpo que no emite con la misma eficiencia que un cuerpo negro se conoce como cuerpo gris, la radiación emitida por un cuerpo gris es:
+A un cuerpo que no irradia con la misma eficiencia que un cuerpo negro se lo conoce como cuerpo gris. La radiación emitida por un cuerpo gris hace uso de la ecuación de cuerpo negro, corregida por un factor de emisividad. 
 
-\\( E_{gris} = ε A^r \sigma T^4 \\)
+\\[ E_{gris} = ε A^r \sigma \ T^4 \\]
 
-*  Siendo ε la emisividad del cuerpo gris
+Donde:
 
-La cantidad de energía transferida por radiación entre dos objetos con temperaturas \\(T_1\\) y \\(T_2\\) se encuentra con:
+* \\(ε\\) es la emisividad del cuerpo gris
 
-\\( q_r = ε \sigma F_{1,2} A (T_1^4 - T_2^4)\\)
+El calor transferido desde un cuerpo gris (1), hacia otro cuerpo gris (2) por radiación puede expresarse de la siguiente forma:
 
-*   \\(q_r\\) es la cantidad de transferencia de calor por radiación (W)
-*   ε es la emisividad de la superficie radiante (reflectante = 0, absorbente = 1)
-*   \\(F_{1,2}\\) es el factor de vista entre la superficie del cuerpo 1 y el cuerpo 2 (≤1)
+\\[Q_{1,2} = \sigma \ ε_1 \ \alpha_2 \ F_{1,2} \ A_1 \ T_1^4\\]
 
-El factor de vista entre dos superficies se define como la porción de la radiación saliente de una superficie que es interceptada por la otra.
+Donde:
 
-A menos que la diferencia entre dos o más cuerpos sea alta, la transferencia de calor por radiación suele ser muy baja.
+* \\(ε_1\\) es la emisividad de la superficie del cuerpo 1.
+* \\(\alpha_2\\) es la absortividad de la superficie del cuerpo 2.
+* \\(F_{1,2}\\) es el factor de vista entre la superficie del cuerpo 1 y el cuerpo 2
+* \\(A_1\\) es el área de la superficie del cuerpo 1.
+* \\(T_1\\) es la temperatura del cuerpo 1.
 
-*   La radiación entre el sol y el satélite debe ser tenida en cuenta..
-*   La radiación entre los componentes electrónicos internos puede ser desestimada.
+El factor de vista de una superficie 1 hacia una superficie 2 se define como la porción del campo de visión de la superficie 1 que es ocupada por la superficie 2. Dado que se trata de un porcentaje, este toma valores entre cero y uno.
+
+Así como el factor de emisividad corrige la diferencia de emisión de un cuerpo gris frente a la emisión teórica de un cuerpo negro, el factor de absortividad realiza la misma corrección sobre la cantidad de energía absorbida por la superficie de un cuerpo gris. 
+Dado que ambos factores suelen ser similares (para una misma superficie), se suelen simplificar las ecuaciones reemplazando la emisividad por la absortividad. 
+Es importante aclarar que tanto la absortividad como la emisividad dependen no solo de la superficie en cuestión, sino también de la frecuencia de la radiación emitida o recibida.
 
 Fuentes de Calor en Sistemas Espaciales
 ---------------------------------------
 
-Hay generalmente tres fuentes de calor:
+En un sistema espacial existen, generalmente, tres fuentes de calor:
+
+* Radiación del sol.
+* Radiación de albedo.
+* Radiación infrarroja terrestre.
 
 ![](images/image3.png)
-
-*   Radiación del sol
-*   El albedo
-*   Calentamiento planetario proveniente de la Tierra (radiación de cuerpo negro de la Tierra)
 
 * * *
 
 ### Radiación solar
 
-Es la principal fuente de calentamiento, puede ser considerada constante, suele rondar entre 1322 \\(\frac{W}{m^2}\\) y 1414 \\(\frac{W}{m^2}\\)
+Es la principal fuente de calor y puede ser considerada constante. Suele rondar entre 1322 \\(\frac{W}{m^2}\\) y 1414 \\(\frac{W}{m^2}\\).
 
-El cálculo de la radiación incidente desde el sol sobre una superficie se caracterizapor el flujo solar, S \\([\frac{W}{m^2}]\\) y por su orientación respecto al sol.
-Debido a la gran distancia con el sol, se puede tomar la suposición de que la radiación esta esta dada por rayos paralelos.
+La radiación proveniente desde el sol e incidente sobre una superficie se encuentra en función del flujo solar \\(S \ [\frac{W}{m^2}]\\) y de la orientación de esta con respecto al sol.
+Debido a la gran distancia con el sol, se puede tomar la suposición de que la radiación esta dada por rayos paralelos.
 
-Hay que tener en cuenta que las superficies poseen una absortividad en el espectro de luz solar, por lo que no necesariamente absorberan toda la radiación proveniente del sol.
+El calor recibido por una superficie \\(i\\) debido a la radiación proveniente del sol estará dado por:
+
+\\[
+Q_{Solar} = \alpha_i^{Sun} F_{Sun,i} \ A_i S
+\\]
+
+\\(\alpha_i^{Sun}\\) considera la absortividad de la superficie \\(i\\) bajo la frecuencia de las ondas electromagnéticas emitidas por el sol.
 
 ### Albedo
 
-El albedo es la radiación solar reflejada desde la superficie terrestre. Se suele expresar como la fracción de radiación solar incidente que es reflejada hacia el espacio.
+El albedo refiere a la radiación solar reflejada desde la superficie terrestre. Se suele expresar como la fracción de radiación solar incidente que es reflejada hacia el espacio.
 
-\\( A = f S\\)
+\\[ q = A_f S\\]
 
-* A, flujo de Albedo \\([\frac{W}{m^2}]\\)
-* f, factor de albedo
-* S, constante solar \\([\frac{W}{m^2}]\\)
+Donde: 
+
+* \\(A_f\\) es el factor de albedo
+* S es la constante solar \\([\frac{W}{m^2}]\\)
 
 El albedo promedio de la tierra es de aproximadamente 0.3.
 
-Se debe tener en cuenta que la orientación del satétile respecto a la tierra influirá sobre la radiación absorbida por albedo, asi como también influirá la absortividad en el espectro solar, al igual que en la radiación solar.
+De esta forma, es posible expresar el calor recibido por una superficie \\(i\\) debido al albedo de la siguiente forma:
+
+\\[
+Q_{Albedo} = \alpha_i^{IR} F_{Earth,i} \ A_i A_{f_i} S
+\\]
+
 
 ### Radiación Infraroja Terrestre
 
 La radiación Infraroja (IR) terrestre refiere a la radiación emitida por la tierra por el simple hecho de tratarse de un cuerpo con temperatura mayor a cero grados absolutos. Por lo general se considera que esta radiación es constante a lo largo de su superficie y se la suele tomar con un valor cercano a 235 \\(\frac{W}{m^2}\\).
 
-Al igual que con el Albedo, la orientación del satétile respecto a la tierra influirá en la radiación absorbida por este, también influirá la absortividad en el espectro IR (distinta a la solar) del material utilizado.
+El calor recibido por una superficie S debido a radiación IR estará dado por:
+
+\\[
+Q_{IR} = \alpha_i^{IR} F_{Earth,i} \ E_{IR}
+\\]
+
+Donde:
+
+* \\(E_{IR}\\) es la constante de IR terrestre \\([\frac{W}{m^2}]\\)
 
 * * *
