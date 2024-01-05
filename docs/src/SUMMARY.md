@@ -16,7 +16,7 @@
 # Technical Manual
 
 - [Manual Técnico](./technical_manual/technical_manual.md)
-  - [Modelo teórico](./technical_manual/theorical_model/theorical_model.md)
+  - [Modelo teórico](./technical_manual/theoretical_model/theoretical_model.md)
   - [Modelo FEM](./technical_manual/fem/fem.md)
   - [Paralelización en GPU](./technical_manual/gpu_parallelization/gpu_parallelization.md)
   - [Preprocessor](./technical_manual/preprocessor/preprocessor.md)
