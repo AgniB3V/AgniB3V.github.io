@@ -3,6 +3,6 @@ authors = ["Franco Barreneche", "Gianluca Belinche", "Guido Botta", "Julian Vent
 language = "en"
 multilingual = false
 src = "src"
-title = "Thermal B3V"
+title = "Agni B3V"
 [output.html]
 mathjax-support = true

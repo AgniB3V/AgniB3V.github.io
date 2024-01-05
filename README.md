@@ -1,6 +1,6 @@
 # agnib3v.github.io
 
-[AgniB3V.github.io](https://thermalb3v.github.io/)
+[AgniB3V.github.io](https://agnib3v.github.io/)
 
 Created using [mdBook](https://rust-lang.github.io/mdBook/)
 
