@@ -21,33 +21,33 @@ No hay flujos.
 
 Resultados PrePoMax:
 
-![](images/image111.png)
+<center><img src="images/image111.png" ...></center>
 
 Luego de 2000 segundos de simulación las temperaturas varían entre 7.5 C y 114 C
 
-![](images/image62.png)
+<center><img src="images/image62.png" ...></center>
 
 Luego de 6000 segundos de simulación las temperaturas varían entre 39.11 C y 60.57 C
 
-![](images/image85.png)
+<center><img src="images/image85.png" ...></center>
 
 Luego de 15000 segundos de simulación se llegó a una temperatura estable entre 49.46 C y 50.08 C
 
 Resultados Solver:
 
-![](images/image93.png)
+<center><img src="images/image93.png" ...></center>
 
 Luego de 2000 segundos, las temperaturas varían entre 280 K (7 C) y 382 K (109 C)
 
-![](images/image113.png)
+<center><img src="images/image113.png" ...></center>
 
 Luego de 6000 segundos, las temperaturas varían entre 314 K (41 C) y 332 K (59 C)
 
-![](images/conduction_Prueba1.png)
+<center><img src="images/conduction_Prueba1.png" ...></center>
 
 Se puede observar que a los 15000 segundos, se llega al mismo resultado de 323 K (50 C)
 
-![](images/image80.png)
+<center><img src="images/image80.png" ...></center>
 
 Se puede observar en paraview también la misma temperatura
 

@@ -6,3 +6,5 @@ src = "src"
 title = "Agni B3V"
 [output.html]
 mathjax-support = true
+default-theme = "rust"
+preferred-dark-theme = "rust"
