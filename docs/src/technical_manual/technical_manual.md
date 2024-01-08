@@ -8,6 +8,6 @@ En el manual técnico se tratarán los siguientes temas:
   - [Interacción Elemento-Elemento](./technical_manual/preprocessor/element_element/element_element.md)
   - [Interacción Elemento-Tierra](./technical_manual/preprocessor/element_earth/element_earth.md)
 - [Solver](./solver/solver.md)
-  - [Modelo teórico](./theorical_model/theorical_model.md)
+  - [Modelo teórico](./theoretical_model/theoretical_model.md)
   - [Modelo FEM](./fem/fem.md)
   - [Paralelización](./gpu_parallelization/gpu_parallelization.md)

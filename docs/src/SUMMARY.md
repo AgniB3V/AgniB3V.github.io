@@ -2,7 +2,7 @@
 
 # Índice
 
-- [AgniB3V](./agnib3v/agnib3v.md)
+- [AgniB3V](agnib3v.md)
 
 - [Manual de Usuario](./user_manual/user_manual.md)
   - [Instalación](./user_manual/installation/installation.md)
@@ -22,7 +22,7 @@
     - [Interacción Elemento-Elemento](./technical_manual/preprocessor/element_element/element_element.md)
     - [Interacción Elemento-Tierra](./technical_manual/preprocessor/element_earth/element_earth.md)
   - [Solver](./technical_manual/solver/solver.md)
-    - [Modelo teórico](./technical_manual/theorical_model/theorical_model.md)
+    - [Modelo teórico](./technical_manual/theoretical_model/theoretical_model.md)
     - [Modelo FEM](./technical_manual/fem/fem.md)
     - [Paralelización en GPU](./technical_manual/gpu_parallelization/gpu_parallelization.md)
 
