@@ -7,3 +7,9 @@ Para más información, visitar <https://documentation.help/GMAT/WelcomeToGmat.h
 ## Instalación manual
 
 La instalación de GMAT viene incluida en la instalación del paquete de AgniB3V. Sin embargo, si desea instalar manualmente GMAT, puede hacerlo desde la página web <https://sourceforge.net/projects/gmat/>.
+
+## Tutoriales
+
+Recomendamos seguir los tutoriales de GMAT para familiarizarse con la aplicación. Para ello visitar <https://documentation.help/GMAT/Tutorials.html>.
+
+<!-- TODO: hablar del script template y poner un ejemplo de ejecución desde la GUI (captura de la gui con el boton con reborde para resaltar) -->
