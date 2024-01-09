@@ -7,7 +7,7 @@ En el manual de usuario se tratarán los siguientes temas:
 - [GMAT](./gmat/gmat.md)
 - [FreeCAD](./freecad/freecad.md)
 - [FreeCAD (Addon)](./freecad_addon/freecad_addon.md)
-- [Preprocessor](./preprocessor/preprocessor.md)
+- [Preprocesador](./preprocessor/preprocessor.md)
 - [Solver](./solver/solver.md)
 - [Paraview](./paraview/paraview.md)
 - [Plotter](./plotter/plotter.md)

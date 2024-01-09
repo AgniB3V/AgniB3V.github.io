@@ -12,7 +12,7 @@ Actualmente incluye herramientas para:
 
 * Configuración de constantes orbitales, como ser radiación infraroja terrestre, albedo y constante solar. ([GMAT](/user_manual/gmat/gmat.md))
 
-* Estimación de factores de vista e intercambio de energía entre elementos y entre elementos y otros cuerpos celestes. ([Preprocessor](/user_manual/preprocessor/preprocessor.md))
+* Estimación de factores de vista e intercambio de energía entre elementos y entre elementos y otros cuerpos celestes. ([Preprocesador](/user_manual/preprocessor/preprocessor.md))
 
 * Simulación térmica segundo a segundo en un intervalo y órbita especificados. ([Solver](/user_manual/solver/solver.md))
 
