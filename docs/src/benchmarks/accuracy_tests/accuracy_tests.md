@@ -13,7 +13,7 @@ Modelo / Materiales / Temperaturas Iniciales / Flujos
 
 ### Prueba 1: Cubo / Aluminio / 0 C y 300 C / 0 W/m^2
 
-Se modeló un cubo de 1 m x 1 m x 1 m, cuyo material fue aluminio, con densidad de ![](images/image1.png), calor específico ![](images/image2.png) y conductividad térmica de ![](images/image3.png).
+Se modeló un cubo de 1 m x 1 m x 1 m, cuyo material fue aluminio, con densidad de  //(2700 \frac{kg}{m^3}//) , calor específico  //(900 \frac{J}{kg.K}//)  y conductividad térmica de  //(237 \frac{W}{K.m}//) .
 
 Una de las caras tiene una temperatura inicial de 300 C y las demás de 0 C.
 
@@ -57,11 +57,11 @@ La temperatura de la cara caliente se va transmitiendo al resto del cubo, logran
 
 ### Prueba 2: Cubo / Aluminio / 0 C / 200 W/m^2
 
-Se modeló un cubo de 1 m x 1 m x 1 m, cuyo material fue aluminio, con densidad de![](images/image1.png), calor específico ![](images/image2.png) y conductividad térmica de ![](images/image3.png).
+Se modeló un cubo de 1 m x 1 m x 1 m, cuyo material fue aluminio, con densidad de //(2700 \frac{kg}{m^3}//) , calor específico  //(900 \frac{J}{kg.K}//)  y conductividad térmica de  //(237 \frac{W}{K.m}//) .
 
 Las caras tienen una temperatura inicial de 0 C.
 
-Todo el cubo tiene un flujo constante de ![](images/image4.png)
+Todo el cubo tiene un flujo constante de  //(200 \frac{W}{m^2}//)  
 
 Resultados PrePoMax:
 
@@ -77,15 +77,15 @@ Prueba Teórica:
 
 El cambio de temperatura dado un flujo en Joules se da de acuerdo a la siguiente ecuación
 
-![](images/image5.png)
+ //(q = m c \Delta T//)  
 
 Para el caso de una de las caras del cubo:
 
-![](images/image6.png)
+//( m = p V = 2700 \frac{kg}{m^3} * 1 m * 1 m * 0.001 m = 2.7 kg //)
 
-![](images/image7.png)
+//(c = 900 \frac{J}{kg K}//)
 
-![](images/image8.png)
+//(Q = 200 \frac{W}{m^2} -> q = Q * A * t = 200 \frac{J}{s m^2} * 1 m^2 * 200 s = 40000 J//)
 
 A = Área de la cara
 
@@ -93,7 +93,7 @@ t = tiempo
 
 Por lo tanto el cambio de temperatura luego de 200 segundos es:
 
-![](images/image9.png)![](images/image10.png) 
+//(\Delta T = \frac{q}{m c} = \frac{40000}{2.7 * 900} = 16.46 K//)
 
 Resultados Solver:
 
@@ -111,9 +111,9 @@ Como el cubo tiene la misma temperatura y el flujo es constante, la temperatura 
 
 Se modeló un cubo de 1 m x 1 m x 1 m
 
-Una de las caras tiene como material cobre, con densidad ![](images/image11.png), calor específico ![](images/image12.png) y conductividad térmica ![](images/image13.png).
+Una de las caras tiene como material cobre, con densidad  //(8960 \frac{kg}{m^3}//) , calor específico  //(385 \frac{J}{kg.K}//)  y conductividad térmica  //(400 \frac{W}{K.m}//) .
 
-El resto de las caras tienen de material roble, con densidad de![](images/image14.png), calor específico ![](images/image15.png) y conductividad térmica de ![](images/image16.png).
+El resto de las caras tienen de material roble, con densidad de //(700 \frac{kg}{m^3}//) , calor específico  //(2300 \frac{J}{kg.K}//)  y conductividad térmica de  //(400 \frac{W}{K.m}//) .
 
 La temperatura inicial de la cara de cobre es 300 C y la de las caras de roble 0 C.
 
@@ -159,9 +159,9 @@ Como el roble es un material con muy poca conductividad térmica, el sistema tar
 
 Se modeló un cubo de 1 m x 1 m x 1 m
 
-Una de las caras tiene como material cobre, con densidad ![](images/image11.png), calor específico ![](images/image12.png) y conductividad térmica ![](images/image13.png).
+Una de las caras tiene como material cobre, con densidad  //(8960 \frac{kg}{m^3}//) , calor específico  //(385 \frac{J}{kg.K}//)  y conductividad térmica  //(400 \frac{W}{K.m}//) .
 
-El resto de las caras tienen de material aluminio, con densidad de ![](images/image1.png), calor específico ![](images/image2.png) y conductividad térmica de ![](images/image3.png).
+El resto de las caras tienen de material aluminio, con densidad de  //(2700 \frac{kg}{m^3}//) , calor específico  //(900 \frac{J}{kg.K}//)  y conductividad térmica de  //(237 \frac{W}{K.m}//) .
 
 La temperatura inicial de la cara de cobre es 300 C y la de las caras de aluminio 0 C.
 
@@ -207,13 +207,13 @@ Como la temperatura del cobre era mayor, se transmitió la temperatura al alumin
 
 Se modeló un cubo de 1 m x 1 m x 1 m
 
-Una de las caras tiene como material cobre, con densidad ![](images/image11.png), calor específico ![](images/image12.png) y conductividad térmica ![](images/image13.png).
+Una de las caras tiene como material cobre, con densidad  //(8960 \frac{kg}{m^3}//) , calor específico  //(385 \frac{J}{kg.K}//)  y conductividad térmica  //(400 \frac{W}{K.m}//) .
 
-El resto de las caras tienen de material roble, con densidad de![](images/image14.png), calor específico ![](images/image15.png) y conductividad térmica de ![](images/image16.png).
+El resto de las caras tienen de material roble, con densidad de //(700 \frac{kg}{m^3}//) , calor específico  //(2300 \frac{J}{kg.K}//)  y conductividad térmica de  //(400 \frac{W}{K.m}//) .
 
 La temperatura inicial es de 0 C para todo el cubo.
 
-Hay flujo constante de ![](images/image17.png)para todo el cubo.
+Hay flujo constante de //(100 \frac{W}{m^2}//) para todo el cubo.
 
 Resultados PrePoMax:
 
@@ -257,7 +257,7 @@ Al igual que con la Prueba 2, se puede calcular cuanto seria el cambio de temper
 
 Para la cara de cobre, a los 200 segundos tenemos:
 
-![](images/image18.png)
+//(\Delta T = \frac{q}{m c} = \frac{Q A t}{V p c} = \frac{100 * 1 * 200}{0.001 * 8960 * 385} = 5.79 K//)
 
 Que es efectivamente el cambio de temperatura a los 200 segundos.
 
@@ -265,7 +265,7 @@ Para 2000 segundos, el cambio de temperatura debería ser 57.9, sin embargo esta
 
 Conclusión:
 
-Más allá de haber empezado a la misma temperatura, como el roble y el cobre tienen constantes térmicas diferentes, el cambio de temperatura dado un flujo no es igual para ambos, por lo que el cambio de temperatura es distinto en ambos materiales, y teniendo en cuenta los resultados de la prueba 4, el tiempo necesario para que se estabilicen las temperaturas por conducción es mucho mayor, por lo que nunca se llega a una estabilidad.[\[a\]](#cmnt1)[\[b\]](#cmnt2)
+Más allá de haber empezado a la misma temperatura, como el roble y el cobre tienen constantes térmicas diferentes, el cambio de temperatura dado un flujo no es igual para ambos, por lo que el cambio de temperatura es distinto en ambos materiales, y teniendo en cuenta los resultados de la prueba 4, el tiempo necesario para que se estabilicen las temperaturas por conducción es mucho mayor, por lo que nunca se llega a una estabilidad.
 
 Tiene sentido que el cambio de temperatura sea mayor en el roble, ya que la densidad de éste es menor, por lo que la masa es menor, lo cual hace que el cambio de temperatura sea mayor (aunque el calor específico sea mayor y haga que el cambio de temperatura sea menor, no es lo suficiente para contrarrestar el peso de la densidad)
 
@@ -278,11 +278,11 @@ A continuación se compararán pruebas teóricas realizadas para modelos en los
 
 En esta prueba la idea es calcular de manera teórica la transferencia de calor por radiación de dos placas infinitas paralelas, y aproximarlas haciendo un modelo de dos placas muy grandes y muy cerca.
 
-Además se tomarán los factores de vista directos entre las superficie[\[c\]](#cmnt3)[\[d\]](#cmnt4)s por su mayor facilidad de cálculo, para que los resultados sean comparables, también se toman estos en la simulación.
+Además se tomarán los factores de vista directos entre las superficies por su mayor facilidad de cálculo, para que los resultados sean comparables, también se toman estos en la simulación.
 
 Se modelaron dos placas de 1000 m x 1000 m con grosor de 0.001 m, a una distancia de 0.1 m
 
-Densidad = 2700 ![](images/image19.png), Calor específico = 897 ![](images/image20.png)
+Densidad = //(2700 \frac{kg}{m^3}//) , Calor específico = //(897 \frac{J}{kg.K}//)
 
 Emisividad = 1
 
@@ -294,39 +294,39 @@ Prueba Teórica:
 
 El flujo de calor para una de las placas será:
 
-![](images/image21.png)
+//(q_{Total1} = q_{Gain1} - q_{Lost1}//)
 
-![](images/image22.png) 
+//(q_{Lost1} = e_1 \sigma T_1^4//)
 
-![](images/image23.png) 
+//(q_{Gain1} = F_{21} e_1 e_2 \sigma T_2^4//)
 
 El de la otra placa:
 
-![](images/image24.png)
+//(q_{Total2} = q_{Gain2} - q_{Lost2}//)
 
-![](images/image25.png) 
+//(q_{Lost2} = e_2 \sigma T_2^4//)
 
-![](images/image26.png) 
+//(q_{Gain2} = F_{12} e_1 e_2 \sigma T_1^4//)
 
 Siendo:
 
-e1 = Emisividad de la placa 1
+//(e_1//) = Emisividad de la placa 1
 
-e2 = Emisividad de la placa 2
+//(e_2//) = Emisividad de la placa 2
 
-F21 \= Factor de vista de 2 a 1
+//(F_{21}//) = Factor de vista de 2 a 1
 
-F12 = Factor de vista de 1 a 2
+//(F_{12}//) = Factor de vista de 1 a 2
 
 Luego una vez obtenidos los q para cada placa, se puede calcular la variación de temperatura de la siguiente manera:
 
-![](images/image27.png)
+//(\Delta T = \frac{Q}{m c}//)
 
 Siendo Q el calor en joules obtenido, m la masa en kg y c el calor específico
 
 Por lo que si tomamos una cantidad de tiempo t transcurrido, obtenemos que
 
-![](images/image28.png)
+//(\Delta T = \frac{Q}{m c} = \frac{q * A * t}{densidad * a * th * c}//)
 
 A = Área
 
@@ -334,29 +334,29 @@ th = Thickness
 
 Para el caso particular de esta prueba tenemos que:
 
-![](images/image29.png) ![](images/image30.png)
+//(q_{Lost1} = 5.6 * 10^{-8} * 500^4 = 3500 \frac{W}{m^2}//)
 
-![](images/image31.png) ![](images/image30.png)
+//(q_{Gain1} = 0.5 *  5.6 * 10^{-8} * 300^4 = 226.8 \frac{W}{m^2}//)
 
-![](images/image32.png) ![](images/image30.png)
+//(q_{Lost2} = 5.6 * 10^{-8} * 300^4 = 453.6 \frac{W}{m^2}//)
 
-![](images/image33.png) ![](images/image30.png)
+//(q_{Gain2} = 0.5 *  5.6 * 10^{-8} * 500^4 = 1750 \frac{W}{m^2}//)
 
-![](images/image34.png) ![](images/image30.png)
-
-![](images/image35.png) ![](images/image30.png)
+//(q_{Total1} = q_{Gain1} - q_{Lost1} = -3273.2 \frac{W}{m^2}//)
+    
+//(q_{Total2} = q_{Gain2} - q_{Lost2} = 1296.4 \frac{W}{m^2}//)
 
 Si pasaron 10 segundos:
 
-![](images/image36.png)
+//(\Delta T_1 = \frac{q_{Total1} * A * t}{densidad * a * th * c} = \frac{-3273.2 * 10}{2700 * 0.001 * 897} = -13.51 K//)
 
-![](images/image37.png)
+//(\Delta T_2 = \frac{q_{Total2} * A * t}{densidad * a * th * c} = \frac{1750 * 10}{2700 * 0.001 * 897} = 7.22 K//)
 
 Por lo que las nuevas temperaturas serían:
 
-T1 = 500 - 13.51 = 486.49 K
-
-T2 = 300 + 7.22 = 307.22 K
+//(T_1 = 500 - 13.51 = 486.49 K//)
+	
+//(T_2 = 300 + 7.22 = 307.22 K//)
 
 Resultados Solver:
 
@@ -376,29 +376,29 @@ Emisividad2 = 1
 
 Prueba Teórica:
 
-![](images/image38.png)![](images/image30.png)
+//(q_{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 * 10^{-8} * 500^4 = 2450 \frac{W}{m^2}//)
+	
+//(q_{Gain1} = F_{21} e_1 e_2 \sigma T_2^4 = 0.5 * 0.7 * 5.6 * 10^{-8} * 300^4 = 158.76 \frac{W}{m^2}//)
 
-![](images/image39.png) 
+//(q_{Lost2} = e_2 \sigma T_2^4 = 5.6 * 10^{-8} * 300^4 = 453.6 \frac{W}{m^2}//)
 
-![](images/image40.png) ![](images/image41.png) \* ![](images/image42.png) = ![](images/image43.png) ![](images/image30.png)
+//(q_{Gain2} = F_{12} e_1 e_2 \sigma T_1^4 = 0.5 * 0.7 * 5.6 * 10^{-8} * 500^4 = 1225 \frac{W}{m^2}//)
 
-![](images/image44.png)
+//(q_{Total1} = q_{Gain1} - q_{Lost1} = -2291.24 \frac{W}{m^2}//)
 
-![](images/image45.png)![](images/image30.png)
-
-![](images/image46.png) ![](images/image30.png)
+//(q_{Total2} = q_{Gain2} - q_{Lost2} = 771.4 \frac{W}{m^2}//)
 
 Si pasaron 10 segundos:
 
-![](images/image47.png)
+//(\Delta T_1 = \frac{q_{Total1} * A * t}{densidad * a * th * c} = \frac{-2291.4 * 10}{2700 * 0.001 * 897} = -9.46 K//)
 
-![](images/image48.png) 3.18
+//(\Delta T_2 = \frac{q_{Total2} * A * t}{densidad * a * th * c} = \frac{771.4 * 10}{2700 * 0.001 * 897} = 3.18 K//)
 
 Por lo que las nuevas temperaturas serían:
 
-T1 = 500 - 9.46 = 490.54 K
+//(T_1 = 500 - 9.46 = 490.54 K//)
 
-T2 = 300 + 3.18 = 303.18 K
+//(T_2 = 300 + 3.18 = 303.18 K//)
 
 Resultados Solver:
 
@@ -410,7 +410,7 @@ Luego de 10 segundos de simulación la temperatura de la placa a 500 K pasó a s
 
 ![](images/image102.png)
 
-Mientras que la temperatura de la placa a 300 K pasó a ser 303[\[e\]](#cmnt5).4 K
+Mientras que la temperatura de la placa a 300 K pasó a ser 303.4 K
 
 Igual que el ejemplo anterior, la temperatura de la placa mas fria difiere levemente en resultado
 
@@ -424,29 +424,29 @@ Emisividad2 = 0.2
 
 Prueba Teórica:
 
-![](images/image49.png)
+//(q_{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 * 10^{-8} * 500^4 = 2450 \frac{W}{m^2}//)
+	
+//(q_{Gain1} = F_{21} e_1 e_2 \sigma T_2^4 = 0.5 * 0.7 * 0.2 * 5.6 * 10^{-8} * 300^4 = 31.75 \frac{W}{m^2}//)
 
-![](images/image50.png) 
+//(q_{Lost2} = e_2 \sigma T_2^4 = 0.2 * 5.6 * 10^{-8} * 300^4 = 90.72 \frac{W}{m^2}//)
 
-![](images/image40.png) ![](images/image51.png) \* ![](images/image42.png) = ![](images/image52.png) 
+//(q_{Gain2} = F_{12} e_1 e_2 \sigma T_1^4 = 0.5 * 0.2 * 0.7 * 5.6 * 10^{-8} * 500^4 = 245 \frac{W}{m^2}//)
 
-![](images/image53.png)
+//(q_{Total1} = q_{Gain1} - q_{Lost1} = -2418.25 \frac{W}{m^2}//)
 
-![](images/image54.png)![](images/image30.png)
-
-![](images/image55.png) ![](images/image30.png)
+//(q_{Total2} = q_{Gain2} - q_{Lost2} = 154.28 \frac{W}{m^2}//)
 
 Si pasaron 10 segundos:
 
-![](images/image56.png)
+//(\Delta T_1 = \frac{q_{Total1} * A * t}{densidad * a * th * c} = \frac{-2418.25 * 10}{2700 * 0.001 * 897} = -9.98 K//)
 
-![](images/image57.png) 0.63
+//(\Delta T_2 = \frac{q_{Total2} * A * t}{densidad * a * th * c} = \frac{154.28 * 10}{2700 * 0.001 * 897} = 0.63 K//)
 
 Por lo que las nuevas temperaturas serían:
 
-T1 = 500 - 9.98 = 490.02 K
+//(T_1 = 500 - 9.98 = 490.02 K//)
 
-T2 = 300 + 0.63 = 300.63 K
+//(T_2 = 300 + 0.63 = 300.63 K//)
 
 Resultados Solver:
 
@@ -458,7 +458,7 @@ Luego de 10 segundos, la placa de 500 K esta a una temperatura de 489.9 K
 
 ![](images/image87.png)
 
-Luego de 10 segundos, la placa de 300 K esta a u[\[f\]](#cmnt6)na temperatura de 300.65 K
+Luego de 10 segundos, la placa de 300 K esta a una temperatura de 300.65 K
 
 Al igual que con las pruebas anteriores se observa una leve diferencia en la placa más fría.
 
