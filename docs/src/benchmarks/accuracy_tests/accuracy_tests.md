@@ -112,11 +112,11 @@ El cambio de temperatura dado un flujo en Joules se da de acuerdo a la siguiente
 
 Para el caso de una de las caras del cubo:
 
-\\( m = p V = 2700 \frac{kg}{m^3} _ 1 m _ 1 m \* 0.001 m = 2.7 kg \\)
+\\( m = p V = 2700 \frac{kg}{m^3} * 1 m * 1 m * 0.001 m = 2.7 kg \\)
 
 \\(c = 900 \frac{J}{kg K}\\)
 
-\\(Q = 200 \frac{W}{m^2} -> q = Q \ A \ t = 200 \frac{J}{s m^2} \ 1 m^2 \ 200 s = 40000 J\\)
+\\(Q = 200 \frac{W}{m^2} -> q = Q * A * t = 200 \frac{J}{s m^2} * 1 m^2 * 200 s = 40000 J\\)
 
 A = Área de la cara
 
@@ -124,7 +124,7 @@ t = tiempo
 
 Por lo tanto el cambio de temperatura luego de 200 segundos es:
 
-\\(\Delta T = \frac{q}{m c} = \frac{40000}{2.7 \* 900} = 16.46 K\\)
+\\(\Delta T = \frac{q}{m c} = \frac{40000}{2.7 * 900} = 16.46 K\\)
 
 #### Resultados Solver:
 
@@ -323,7 +323,7 @@ Al igual que con la Prueba 2, se puede calcular cuanto seria el cambio de temper
 
 Para la cara de cobre, a los 200 segundos tenemos:
 
-\\(\Delta T = \frac{q}{m c} = \frac{Q A t}{V p c} = \frac{100 \ 1 \ 200}{0.001 \ 8960 \ 385} = 5.79 K\\)
+\\(\Delta T = \frac{q}{m c} = \frac{Q A t}{V p c} = \frac{100 * 1 * 200}{0.001 * 8960 * 385} = 5.79 K\\)
 
 Que es efectivamente el cambio de temperatura a los 200 segundos.
 
@@ -359,19 +359,19 @@ Prueba Teórica:
 
 El flujo de calor para una de las placas será:
 
-\\(q*{Total1} = q*{Gain1} - q\_{Lost1}\\)
+\\(q_{Total1} = q_{Gain1} - q_{Lost1}\\)
 
-\\(q\_{Lost1} = e_1 \sigma T_1^4\\)
+\\(q_{Lost1} = e_1 \sigma T_1^4\\)
 
-\\(q*{Gain1} = F*{21} e_1 e_2 \sigma T_2^4\\)
+\\(q_{Gain1} = F_{21} e_1 e_2 \sigma T_2^4\\)
 
 El de la otra placa:
 
-\\(q*{Total2} = q*{Gain2} - q\_{Lost2}\\)
+\\(q_{Total2} = q_{Gain2} - q_{Lost2}\\)
 
-\\(q\_{Lost2} = e_2 \sigma T_2^4\\)
+\\(q_{Lost2} = e_2 \sigma T_2^4\\)
 
-\\(q*{Gain2} = F*{12} e_1 e_2 \sigma T_1^4\\)
+\\(q_{Gain2} = F_{12} e_1 e_2 \sigma T_1^4\\)
 
 Siendo:
 
@@ -379,9 +379,9 @@ Siendo:
 
 \\(e_2\\) = Emisividad de la placa 2
 
-\\(F\_{21}\\) = Factor de vista de 2 a 1
+\\(F_{21}\\) = Factor de vista de 2 a 1
 
-\\(F\_{12}\\) = Factor de vista de 1 a 2
+\\(F_{12}\\) = Factor de vista de 1 a 2
 
 Luego una vez obtenidos los q para cada placa, se puede calcular la variación de temperatura de la siguiente manera:
 
@@ -391,7 +391,7 @@ Siendo Q el calor en joules obtenido, m la masa en kg y c el calor específico
 
 Por lo que si tomamos una cantidad de tiempo t transcurrido, obtenemos que
 
-\\(\Delta T = \frac{Q}{m c} = \frac{q _ A _ t}{densidad _ a _ th \* c}\\)
+\\(\Delta T = \frac{Q}{m c} = \frac{q * A * t}{densidad * a * th * c}\\)
 
 A = Área
 
@@ -399,27 +399,28 @@ th = Thickness
 
 Para el caso particular de esta prueba tenemos que:
 
-\\(q\_{Lost1} = 5.6 _ 10^{-8} _ 500^4 = 3500 \frac{W}{m^2}\\)
+\\(q_{Lost1} = 5.6 * 10^{-8} * 500^4 = 3500 \frac{W}{m^2}\\)
 
-\\(q\_{Gain1} = 0.5 _ 5.6 _ 10^{-8} \* 300^4 = 226.8 \frac{W}{m^2}\\)
+\\(q_{Gain1} = 0.5 *  5.6 * 10^{-8} * 300^4 = 226.8 \frac{W}{m^2}\\)
 
-\\(q\_{Lost2} = 5.6 _ 10^{-8} _ 300^4 = 453.6 \frac{W}{m^2}\\)
+\\(q_{Lost2} = 5.6 * 10^{-8} * 300^4 = 453.6 \frac{W}{m^2}\\)
 
-\\(q\_{Gain2} = 0.5 _ 5.6 _ 10^{-8} \* 500^4 = 1750 \frac{W}{m^2}\\)
+\\(q_{Gain2} = 0.5 *  5.6 * 10^{-8} * 500^4 = 1750 \frac{W}{m^2}\\)
 
-\\(q*{Total1} = q*{Gain1} - q\_{Lost1} = -3273.2 \frac{W}{m^2}\\)
-
-\\(q*{Total2} = q*{Gain2} - q\_{Lost2} = 1296.4 \frac{W}{m^2}\\)
+\\(q_{Total1} = q_{Gain1} - q_{Lost1} = -3273.2 \frac{W}{m^2}\\)
+    
+\\(q_{Total2} = q_{Gain2} - q_{Lost2} = 1296.4 \frac{W}{m^2}\\)
 
 Si pasaron 10 segundos:
 
-\\(\Delta T*1 = \frac{q*{Total1} _ A _ t}{densidad _ a _ th _ c} = \frac{-3273.2 _ 10}{2700 _ 0.001 _ 897} = -13.51 K\\)
+\\(\Delta T_1 = \frac{q_{Total1} * A * t}{densidad * a * th * c} = \frac{-3273.2 * 10}{2700 * 0.001 * 897} = -13.51 K\\)
 
-\\(\Delta T*2 = \frac{q*{Total2} _ A _ t}{densidad _ a _ th _ c} = \frac{1750 _ 10}{2700 _ 0.001 _ 897} = 7.22 K\\)
+\\(\Delta T_2 = \frac{q_{Total2} * A * t}{densidad * a * th * c} = \frac{1750 * 10}{2700 * 0.001 * 897} = 7.22 K\\)
 
 Por lo que las nuevas temperaturas serían:
 
 \\(T_1 = 500 - 13.51 = 486.49 K\\)
+	
 \\(T_2 = 300 + 7.22 = 307.22 K\\)
 
 Resultados Solver:
@@ -440,22 +441,23 @@ Emisividad2 = 1
 
 Prueba Teórica:
 
-\\(q*{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 _ 10^{-8} \* 500^4 = 2450 \frac{W}{m^2}\\)
-\\(q_{Gain1} = F\_{21} e*1 e_2 \sigma T_2^4 = 0.5 * 0.7 _ 5.6 _ 10^{-8} \_ 300^4 = 158.76 \frac{W}{m^2}\\)
+\\(q_{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 * 10^{-8} * 500^4 = 2450 \frac{W}{m^2}\\)
+	
+\\(q_{Gain1} = F_{21} e_1 e_2 \sigma T_2^4 = 0.5 * 0.7 * 5.6 * 10^{-8} * 300^4 = 158.76 \frac{W}{m^2}\\)
 
-\\(q\_{Lost2} = e*2 \sigma T_2^4 = 5.6 * 10^{-8} \_ 300^4 = 453.6 \frac{W}{m^2}\\)
+\\(q_{Lost2} = e_2 \sigma T_2^4 = 5.6 * 10^{-8} * 300^4 = 453.6 \frac{W}{m^2}\\)
 
-\\(q*{Gain2} = F*{12} e*1 e_2 \sigma T_1^4 = 0.5 * 0.7 _ 5.6 _ 10^{-8} \_ 500^4 = 1225 \frac{W}{m^2}\\)
+\\(q_{Gain2} = F_{12} e_1 e_2 \sigma T_1^4 = 0.5 * 0.7 * 5.6 * 10^{-8} * 500^4 = 1225 \frac{W}{m^2}\\)
 
-\\(q*{Total1} = q*{Gain1} - q\_{Lost1} = -2291.24 \frac{W}{m^2}\\)
+\\(q_{Total1} = q_{Gain1} - q_{Lost1} = -2291.24 \frac{W}{m^2}\\)
 
-\\(q*{Total2} = q*{Gain2} - q\_{Lost2} = 771.4 \frac{W}{m^2}\\)
+\\(q_{Total2} = q_{Gain2} - q_{Lost2} = 771.4 \frac{W}{m^2}\\)
 
 Si pasaron 10 segundos:
 
-\\(\Delta T*1 = \frac{q*{Total1} _ A _ t}{densidad _ a _ th _ c} = \frac{-2291.4 _ 10}{2700 _ 0.001 _ 897} = -9.46 K\\)
+\\(\Delta T_1 = \frac{q_{Total1} * A * t}{densidad * a * th * c} = \frac{-2291.4 * 10}{2700 * 0.001 * 897} = -9.46 K\\)
 
-\\(\Delta T*2 = \frac{q*{Total2} _ A _ t}{densidad _ a _ th _ c} = \frac{771.4 _ 10}{2700 _ 0.001 _ 897} = 3.18 K\\)
+\\(\Delta T_2 = \frac{q_{Total2} * A * t}{densidad * a * th * c} = \frac{771.4 * 10}{2700 * 0.001 * 897} = 3.18 K\\)
 
 Por lo que las nuevas temperaturas serían:
 
@@ -487,22 +489,23 @@ Emisividad2 = 0.2
 
 Prueba Teórica:
 
-\\(q*{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 _ 10^{-8} \* 500^4 = 2450 \frac{W}{m^2}\\)
-\\(q_{Gain1} = F\_{21} e*1 e_2 \sigma T_2^4 = 0.5 * 0.7 _ 0.2 _ 5.6 \_ 10^{-8} \* 300^4 = 31.75 \frac{W}{m^2}\\)
+\\(q_{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 * 10^{-8} * 500^4 = 2450 \frac{W}{m^2}\\)
+	
+\\(q_{Gain1} = F_{21} e_1 e_2 \sigma T_2^4 = 0.5 * 0.7 * 0.2 * 5.6 * 10^{-8} * 300^4 = 31.75 \frac{W}{m^2}\\)
 
-\\(q\_{Lost2} = e*2 \sigma T_2^4 = 0.2 * 5.6 \_ 10^{-8} \* 300^4 = 90.72 \frac{W}{m^2}\\)
+\\(q_{Lost2} = e_2 \sigma T_2^4 = 0.2 * 5.6 * 10^{-8} * 300^4 = 90.72 \frac{W}{m^2}\\)
 
-\\(q*{Gain2} = F*{12} e*1 e_2 \sigma T_1^4 = 0.5 * 0.2 _ 0.7 _ 5.6 \_ 10^{-8} \* 500^4 = 245 \frac{W}{m^2}\\)
+\\(q_{Gain2} = F_{12} e_1 e_2 \sigma T_1^4 = 0.5 * 0.2 * 0.7 * 5.6 * 10^{-8} * 500^4 = 245 \frac{W}{m^2}\\)
 
-\\(q*{Total1} = q*{Gain1} - q\_{Lost1} = -2418.25 \frac{W}{m^2}\\)
+\\(q_{Total1} = q_{Gain1} - q_{Lost1} = -2418.25 \frac{W}{m^2}\\)
 
-\\(q*{Total2} = q*{Gain2} - q\_{Lost2} = 154.28 \frac{W}{m^2}\\)
+\\(q_{Total2} = q_{Gain2} - q_{Lost2} = 154.28 \frac{W}{m^2}\\)
 
 Si pasaron 10 segundos:
 
-\\(\Delta T*1 = \frac{q*{Total1} _ A _ t}{densidad _ a _ th _ c} = \frac{-2418.25 _ 10}{2700 _ 0.001 _ 897} = -9.98 K\\)
+\\(\Delta T_1 = \frac{q_{Total1} * A * t}{densidad * a * th * c} = \frac{-2418.25 * 10}{2700 * 0.001 * 897} = -9.98 K\\)
 
-\\(\Delta T*2 = \frac{q*{Total2} _ A _ t}{densidad _ a _ th _ c} = \frac{154.28 _ 10}{2700 _ 0.001 _ 897} = 0.63 K\\)
+\\(\Delta T_2 = \frac{q_{Total2} * A * t}{densidad * a * th * c} = \frac{154.28 * 10}{2700 * 0.001 * 897} = 0.63 K\\)
 
 Por lo que las nuevas temperaturas serían:
 
@@ -531,7 +534,7 @@ Se realizaron calculos de conservación de la energia de la siguiente manera:
 
 Para cada instante de tiempo, se calculo la energia del sistema como la sumatoria para cada nodo de:
 
-\\(E = T _ c _ p _ th _ a\\)
+\\(E = T * c * p * th * a\\)
 
 Siendo
 
