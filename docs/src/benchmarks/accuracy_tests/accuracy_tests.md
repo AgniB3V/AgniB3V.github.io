@@ -116,7 +116,7 @@ Para el caso de una de las caras del cubo:
 
 \\(c = 900 \frac{J}{kg K}\\)
 
-\\(Q = 200 \frac{W}{m^2} -> q = Q _ A _ t = 200 \frac{J}{s m^2} _ 1 m^2 _ 200 s = 40000 J\\)
+\\(Q = 200 \frac{W}{m^2} -> q = Q \ A \ t = 200 \frac{J}{s m^2} \ 1 m^2 \ 200 s = 40000 J\\)
 
 A = Área de la cara
 
@@ -323,7 +323,7 @@ Al igual que con la Prueba 2, se puede calcular cuanto seria el cambio de temper
 
 Para la cara de cobre, a los 200 segundos tenemos:
 
-\\(\Delta T = \frac{q}{m c} = \frac{Q A t}{V p c} = \frac{100 _ 1 _ 200}{0.001 _ 8960 _ 385} = 5.79 K\\)
+\\(\Delta T = \frac{q}{m c} = \frac{Q A t}{V p c} = \frac{100 \ 1 \ 200}{0.001 \ 8960 \ 385} = 5.79 K\\)
 
 Que es efectivamente el cambio de temperatura a los 200 segundos.
 
