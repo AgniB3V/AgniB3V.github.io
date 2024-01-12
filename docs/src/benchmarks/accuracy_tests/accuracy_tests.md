@@ -153,7 +153,7 @@ Se modeló un cubo con las siguientes características:
   - Densidad de \\(700 \frac{kg}{m^3}\\)
   - Calor específico de \\(2300 \frac{J}{kg \ K}\\)
   - Conductividad térmica de \\(0.23 \frac{W}{K \ m}\\)
-- La temperatura inicial de la cara de cobre es (300^\circ C\\)
+- La temperatura inicial de la cara de cobre es \\(300^\circ C\\)
 - La temperatura inicial de las caras de roble es \\(0^\circ C\\)
 - No hay flujos
 
@@ -213,7 +213,7 @@ Se modeló un cubo con las siguientes características:
   - Densidad de \\(2700 \frac{kg}{m^3}\\)
   - Calor específico de \\(900 \frac{J}{kg \ K}\\)
   - Conductividad térmica de \\(237 \frac{W}{K \ m}\\)
-- La temperatura inicial de la cara de cobre es (300^\circ C\\)
+- La temperatura inicial de la cara de cobre es \\(300^\circ C\\)
 - La temperatura inicial de las caras de aluminio es \\(0^\circ C\\)
 - No hay flujos
 
