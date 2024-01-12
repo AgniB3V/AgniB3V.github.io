@@ -73,42 +73,50 @@ Se observa la misma temperatura en ParaView.
 
 <br/>
 
-**Conclusiones**:
+#### Conclusiones:
 
 La energía adicional de la cara caliente se distribuye con el paso del tiempo, logrando así una temperatura final estable.
 Los resultados obtenidos por ambos softwares son razonablemente cercanos.
 
 ### Prueba 2: Conducción en cubo con flujo constante
 
-Se modeló un cubo de 1 m x 1 m x 1 m, cuyo material fue aluminio, con densidad de //(2700 \frac{kg}{m^3}//) , calor específico //(900 \frac{J}{kg.K}//)  y conductividad térmica de //(237 \frac{W}{K.m}//) .
+Se modeló un cubo con las siguientes características:
 
-Las caras tienen una temperatura inicial de 0 C.
+- Tamaño de \\(1 \ m \times 1 \ m \times 1 \ m\\)
+- Material aluminio, con:
+  - Densidad de \\(2700 \frac{kg}{m^3}\\)
+  - Calor específico de \\(900 \frac{J}{kg \ K}\\)
+  - Conductividad térmica de \\(237 \frac{W}{K \ m}\\)
+- Las caras tienen una temperatura inicial de \\(0^\circ C\\)
+- Todo el cubo tiene un flujo constante de \\(200 \frac{W}{m^2}\\)
 
-Todo el cubo tiene un flujo constante de //(200 \frac{W}{m^2}//)
+#### Resultados PrePoMax:
 
-Resultados PrePoMax:
+Se obtuvieron los siguientes resultados tras simular con PrePoMax:
 
-![](images/image104.png)
+<br/>
 
-Luego de 100 segundos la temperatura es 8.23 C
+<center><img src="images/image104.png" ...></center>
 
-![](images/image70.png)
+Luego de 100 segundos la temperatura es \\(8.23^\circ C\\)
 
-Luego de 200 segundos, la temperatura en todo el cubo es de 16.46 C
+<center><img src="images/image70.png" ...></center>
 
-Prueba Teórica:
+Luego de 200 segundos, la temperatura en todo el cubo es de \\(16.46^\circ C\\)
+
+#### Prueba Teórica:
 
 El cambio de temperatura dado un flujo en Joules se da de acuerdo a la siguiente ecuación
 
-//(q = m c \Delta T//)
+\\(q = m c \Delta T\\)
 
 Para el caso de una de las caras del cubo:
 
-//( m = p V = 2700 \frac{kg}{m^3} _ 1 m _ 1 m \* 0.001 m = 2.7 kg //)
+\\( m = p V = 2700 \frac{kg}{m^3} _ 1 m _ 1 m \* 0.001 m = 2.7 kg \\)
 
-//(c = 900 \frac{J}{kg K}//)
+\\(c = 900 \frac{J}{kg K}\\)
 
-//(Q = 200 \frac{W}{m^2} -> q = Q _ A _ t = 200 \frac{J}{s m^2} _ 1 m^2 _ 200 s = 40000 J//)
+\\(Q = 200 \frac{W}{m^2} -> q = Q _ A _ t = 200 \frac{J}{s m^2} _ 1 m^2 _ 200 s = 40000 J\\)
 
 A = Área de la cara
 
@@ -116,177 +124,212 @@ t = tiempo
 
 Por lo tanto el cambio de temperatura luego de 200 segundos es:
 
-//(\Delta T = \frac{q}{m c} = \frac{40000}{2.7 \* 900} = 16.46 K//)
+\\(\Delta T = \frac{q}{m c} = \frac{40000}{2.7 \* 900} = 16.46 K\\)
 
-Resultados Solver:
+#### Resultados Solver:
 
-![](images/conduction_Prueba2.png)
+Se obtuvieron los siguientes resultados tras simular con el solver de Agni:
 
-Luego de 200 segundos de simulación, se llega a una temperatura de 289.46 K (16.46 C)
+<center><img src="images/conduction_Prueba2.png" ...></center>
+
+Luego de 200 segundos de simulación, se llega a una temperatura de \\(289.46^\circ K \ (16.46^\circ C)\\)
 
 Y se puede observar que el cambio es lineal, por lo que también coinciden en los demás instantes.
 
-Conclusiones:
+#### Conclusiones:
 
 Como el cubo tiene la misma temperatura y el flujo es constante, la temperatura aumenta de manera lineal con el tiempo.
 
 ### Prueba 3: Conducción simple en cubo de dos materiales
 
-Se modeló un cubo de 1 m x 1 m x 1 m
+Se modeló un cubo con las siguientes características:
 
-Una de las caras tiene como material cobre, con densidad //(8960 \frac{kg}{m^3}//) , calor específico //(385 \frac{J}{kg.K}//)  y conductividad térmica //(400 \frac{W}{K.m}//) .
+- Tamaño de \\(1 \ m \times 1 \ m \times 1 \ m\\)
+- Una de las caras tiene como material cobre, con:
+  - Densidad de \\(8960 \frac{kg}{m^3}\\)
+  - Calor específico de \\(385 \frac{J}{kg \ K}\\)
+  - Conductividad térmica de \\(400 \frac{W}{K \ m}\\)
+- El resto de las caras tienen de material roble, con:
+  - Densidad de \\(700 \frac{kg}{m^3}\\)
+  - Calor específico de \\(2300 \frac{J}{kg \ K}\\)
+  - Conductividad térmica de \\(0.23 \frac{W}{K \ m}\\)
+- La temperatura inicial de la cara de cobre es (300^\circ C\\)
+- La temperatura inicial de las caras de roble es \\(0^\circ C\\)
+- No hay flujos
 
-El resto de las caras tienen de material roble, con densidad de //(700 \frac{kg}{m^3}//) , calor específico //(2300 \frac{J}{kg.K}//)  y conductividad térmica de //(400 \frac{W}{K.m}//) .
+#### Resultados PrePoMax:
 
-La temperatura inicial de la cara de cobre es 300 C y la de las caras de roble 0 C.
+Se obtuvieron los siguientes resultados tras simular con PrePoMax:
 
-No hay flujos.
 
-Resultados PrePoMax:
+<br/>
 
-![](images/image68.png)
+<center><img src="images/image68.png" ...></center>
 
-Luego de 1000000 segundos (11 días) de simulación la temperatura se encuentra entre 5.4 C y 149 C
+Luego de 1000000 segundos (11 días) de simulación la temperatura se encuentra entre \\(5.4^\circ C\\) y \\(149^\circ C\\)
 
-![](images/image64.png)
+<center><img src="images/image64.png" ...></center>
 
-Luego de 2000000 segundos (23 días) de simulación la temperatura se encuentra entre 25.88 C y 121.4 C
+Luego de 2000000 segundos (23 días) de simulación la temperatura se encuentra entre \\(25.88^\circ C\\) y \\(121.4^\circ C\\)
 
-![](images/image116.png)
+<center><img src="images/image116.png" ...></center>
 
-Luego de 20000000 segundos (231 días) de simulación se llegó a una temperatura estable entre 83.46 C y 83.79 C
+Luego de 20000000 segundos (231 días) de simulación se llegó a una temperatura estable entre \\(83.46^\circ C\\) y \\(83.79^\circ C\\)
 
-Resultados Solver:
+#### Resultados Solver:
 
-![](images/image98.png)
+Se obtuvieron los siguientes resultados tras simular con el solver de Agni:
 
-Luego de 1000000 de segundos, la temperatura está entre 277 K (4 C) y 419 K (146 C)
+<center><img src="images/image98.png" ...></center>
 
-![](images/image105.png)
+Luego de 1000000 de segundos, la temperatura está entre \\(277^\circ K \ (4^\circ C)\\) y \\(419^\circ K \ (146^\circ C)\\)
 
-Luego de 2000000 segundos, la temperatura se encuentra entre 300 K (27 C) y 392 K (119 C)
+<center><img src="images/image105.png" ...></center>
 
-![](images/conduction_Prueba3.png)
+Luego de 2000000 segundos, la temperatura se encuentra entre \\(300^\circ K \ (27^\circ C)\\) y \\(392^\circ K \ (119^\circ C)\\)
 
-Se puede observar que a los 20000000 de segundos se estabilizó en la misma temperatura de 356.9 K (83.9 C)
+<center><img src="images/conduction_Prueba3.png" ...></center>
 
-![](images/image61.png)
+Se puede observar que a los 20000000 de segundos se estabilizó en la misma temperatura de \\(356.9^\circ K \ (83.9^\circ C)\\) 
+
+<center><img src="images/image61.png" ...></center>
 
 Se puede observar en paraview también la misma temperatura
 
-Conclusiones:
+### Conclusiones:
 
 Como el roble es un material con muy poca conductividad térmica, el sistema tarda mucho tiempo en converger a una temperatura estable.
 
-### Prueba 4: Cubo / Aluminio y Cobre / 0 C y 300 C / 0 W/m^2
+### Prueba 4: Conducción simple en cubo de aluminio y cobre
 
-Se modeló un cubo de 1 m x 1 m x 1 m
+Se modeló un cubo con las siguientes características:
 
-Una de las caras tiene como material cobre, con densidad //(8960 \frac{kg}{m^3}//) , calor específico //(385 \frac{J}{kg.K}//)  y conductividad térmica //(400 \frac{W}{K.m}//) .
+- Tamaño de \\(1 \ m \times 1 \ m \times 1 \ m\\)
+- Una de las caras tiene como material cobre, con:
+  - Densidad de \\(8960 \frac{kg}{m^3}\\)
+  - Calor específico de \\(385 \frac{J}{kg \ K}\\)
+  - Conductividad térmica de \\(400 \frac{W}{K \ m}\\)
+- El resto de las caras tienen de material aluminio, con:
+  - Densidad de \\(2700 \frac{kg}{m^3}\\)
+  - Calor específico de \\(900 \frac{J}{kg \ K}\\)
+  - Conductividad térmica de \\(237 \frac{W}{K \ m}\\)
+- La temperatura inicial de la cara de cobre es (300^\circ C\\)
+- La temperatura inicial de las caras de aluminio es \\(0^\circ C\\)
+- No hay flujos
 
-El resto de las caras tienen de material aluminio, con densidad de //(2700 \frac{kg}{m^3}//) , calor específico //(900 \frac{J}{kg.K}//)  y conductividad térmica de //(237 \frac{W}{K.m}//) .
+#### Resultados PrePoMax:
 
-La temperatura inicial de la cara de cobre es 300 C y la de las caras de aluminio 0 C.
+Se obtuvieron los siguientes resultados tras simular con PrePoMax:
 
-No hay flujos.
 
-Resultados PrePoMax:
+<br/>
 
-![](images/image75.png)
+<center><img src="images/image75.png" ...></center>
 
-Luego de 1000 segundos de simulación, se llegó a una temperatura entre 1.055 C y 180.5 C
+Luego de 1000 segundos de simulación, se llegó a una temperatura entre \\(1.055^\circ C\\) y \\(180.5^\circ C\\)
 
-![](images/image107.png)
+<center><img src="images/image107.png" ...></center>
 
-Luego de 2400 segundos de simulación, se llegó a una temperatura entre 13.55 C y 117.4 C
+Luego de 2400 segundos de simulación, se llegó a una temperatura entre \\(13.55^\circ C\\) y \\(117.4^\circ C\\)
 
-![](images/image124.png)
+<center><img src="images/image124.png" ...></center>
 
-Luego de 18000 segundos de simulación, se llegó a una temperatura estable entre 63.42 C y 63.8 C
+Luego de 18000 segundos de simulación, se llegó a una temperatura estable entre \\(63.42^\circ C\\) y \\(63.8^\circ C\\)
 
-Resultados Solver:
+#### Resultados Solver:
 
-![](images/image122.png)
+Se obtuvieron los siguientes resultados tras simular con el solver de Agni:
 
-Luego de 1000 segundos de simulación, se llegó a una temperatura entre 274 K (1 C) y 445 K (172 C)
+<center><img src="images/image122.png" ...></center>
 
-![](images/image108.png)
+Luego de 1000 segundos de simulación, se llegó a una temperatura entre \\(274^\circ K \ (1^\circ C)\\) y \\(445^\circ K \ (172^\circ C)\\)
 
-Luego de 2400 segundos de simulación, se llegó a una temperatura entre 287 K (14 C) y 387 K (114 C)
+<center><img src="images/conduction_Prueba4.png" ...></center>
 
-![](images/conduction_Prueba4.png)
+Luego de 2400 segundos de simulación, se llegó a una temperatura entre \\(287^\circ K \ (14^\circ C)\\) y \\(387^\circ K \ (114^\circ C)\\)
 
-Se puede observar que a los 18000 de segundos se estabilizó en la misma temperatura de 336.6 K (63.6 C)
+Se puede observar que a los 18000 de segundos se estabilizó en la misma temperatura de \\(336.6^\circ K \ (63.6^\circ C)\\)
 
-![](images/image101.png)
+<center><img src="images/image101.png" ...></center>
 
 Se puede observar en paraview también la misma temperatura
 
-Conclusiones:
+#### Conclusiones:
 
 Como la temperatura del cobre era mayor, se transmitió la temperatura al aluminio y se consiguió una temperatura estable, cabe destacar que si lo comparamos con el caso 1 donde las condiciones eran las mismas excepto por los materiales, la temperatura final obtenida es distinta.
 
-### Prueba 5: Cubo / Roble y Cobre / 0 C / 100 W/m^2
+### Prueba 5: Conducción en cubo con flujo constante y dos materiales
 
-Se modeló un cubo de 1 m x 1 m x 1 m
+Se modeló un cubo con las siguientes características:
 
-Una de las caras tiene como material cobre, con densidad //(8960 \frac{kg}{m^3}//) , calor específico //(385 \frac{J}{kg.K}//)  y conductividad térmica //(400 \frac{W}{K.m}//) .
+- Tamaño de \\(1 \ m \times 1 \ m \times 1 \ m\\)
+- Una de las caras tiene como material cobre, con:
+  - Densidad de \\(8960 \frac{kg}{m^3}\\)
+  - Calor específico de \\(385 \frac{J}{kg \ K}\\)
+  - Conductividad térmica de \\(400 \frac{W}{K \ m}\\)
+- El resto de las caras tienen de material roble, con:
+  - Densidad de \\(700 \frac{kg}{m^3}\\)
+  - Calor específico de \\(2300 \frac{J}{kg \ K}\\)
+  - Conductividad térmica de \\(0.23 \frac{W}{K \ m}\\)
+- La temperatura inicial es de \\(0^\circ C\\) para todo el cubo.
+- Flujo constante de \\(100 \frac{W}{m^2}\\) para todo el cubo
 
-El resto de las caras tienen de material roble, con densidad de //(700 \frac{kg}{m^3}//) , calor específico //(2300 \frac{J}{kg.K}//)  y conductividad térmica de //(400 \frac{W}{K.m}//) .
+#### Resultados PrePoMax:
 
-La temperatura inicial es de 0 C para todo el cubo.
+Se obtuvieron los siguientes resultados tras simular con PrePoMax:
 
-Hay flujo constante de //(100 \frac{W}{m^2}//) para todo el cubo.
 
-Resultados PrePoMax:
+<br/>
 
-![](images/image112.png)
+<center><img src="images/image112.png" ...></center>
 
-Luego de 200 segundos de simulación, la cara de cobre tiene una temperatura de 5.78 C, mientras que el roble tiene una temperatura de aproximadamente 11.89 C.
+Luego de 200 segundos de simulación, la cara de cobre tiene una temperatura de \\(5.78^\circ C\\), mientras que el roble tiene una temperatura de aproximadamente \\(11.89^\circ C\\).
 
-![](images/image74.png)
+<center><img src="images/image74.png" ...></center>
 
-Luego de 1000 segundos de simulación, la cara de cobre tiene una temperatura de 29.63 C, mientras que el roble tiene una temperatura de aproximadamente 62.69 C.
+Luego de 1000 segundos de simulación, la cara de cobre tiene una temperatura de \\(29.63^\circ C\\), mientras que el roble tiene una temperatura de aproximadamente \\(62.69^\circ C\\).
 
-![](images/image79.png)
+<center><img src="images/image79.png" ...></center>
 
-Luego de 2000 segundos de simulación, la cara de cobre tiene una temperatura de 59.94 C, mientras que el roble tiene una temperatura de aproximadamente 123.9 C.
+Luego de 2000 segundos de simulación, la cara de cobre tiene una temperatura de \\(59.94^\circ C\\), mientras que el roble tiene una temperatura de aproximadamente \\(123.9^\circ C\\).
 
-Resultados Solver:
+#### Resultados Solver:
 
-![](images/image103.png)
+Se obtuvieron los siguientes resultados tras simular con el solver de Agni:
 
-Luego de 200 segundos de simulación, la cara de cobre tiene una temperatura de  279 K (6 C), mientras que las de roble de  285 K (12 C)
+<center><img src="images/image103.png" ...></center>
 
-![](images/image106.png)
+Luego de 200 segundos de simulación, la cara de cobre tiene una temperatura de  \\(279^\circ K \ (6^\circ C)\\), mientras que las de roble de  \\(285^\circ K \ (12^\circ C)\\)
 
-Luego de 1000 segundos de simulación, la cara de cobre tiene una temperatura de 304 K (31 C), mientras que las de roble de 335 K (62 C)
+<center><img src="images/image106.png" ...></center>
 
-![](images/image78.png)
+Luego de 1000 segundos de simulación, la cara de cobre tiene una temperatura de \\(304^\circ K \ (31^\circ C)\\), mientras que las de roble de \\(335^\circ K \ (62^\circ C)\\)
 
-Luego de 2000 segundos de simulación, la cara de cobre tiene una temperatura de 335 K (62 C), mientras que las de roble de 397 K (124 C)
+<center><img src="images/image78.png" ...></center>
+
+Luego de 2000 segundos de simulación, la cara de cobre tiene una temperatura de \\(335^\circ K \ (62^\circ C)\\), mientras que las de roble de \\(397^\circ K \ (124^\circ C)\\)
 
 Se puede observar como en el borde la cara de cobre con el roble hay conducción de calor.
 
-![](images/conduction_Prueba5.png)
+<center><img src="images/conduction_Prueba5.png" ...></center>
 
 Las líneas amarillas representan el roble, las rojas el cobre, y las demás la frontera entre ambas.
 
 Se puede observar como el roble va aumentando su temperatura más rápido que el cobre, pero la parte que más cerca del borde está, se va enfriando.
 
-Prueba Teórica:
+#### Prueba Teórica:
 
 Al igual que con la Prueba 2, se puede calcular cuanto seria el cambio de temperatura de una de las caras del cubo a partir del flujo que reciben.
 
 Para la cara de cobre, a los 200 segundos tenemos:
 
-//(\Delta T = \frac{q}{m c} = \frac{Q A t}{V p c} = \frac{100 _ 1 _ 200}{0.001 _ 8960 _ 385} = 5.79 K//)
+\\(\Delta T = \frac{q}{m c} = \frac{Q A t}{V p c} = \frac{100 _ 1 _ 200}{0.001 _ 8960 _ 385} = 5.79 K\\)
 
 Que es efectivamente el cambio de temperatura a los 200 segundos.
 
 Para 2000 segundos, el cambio de temperatura debería ser 57.9, sin embargo esta es 59.94, esto se explica ya que como también está el roble cuya temperatura es mayor, hay conducción por lo que aumenta la temperatura del cobre.
 
-Conclusión:
+#### Conclusión:
 
 Más allá de haber empezado a la misma temperatura, como el roble y el cobre tienen constantes térmicas diferentes, el cambio de temperatura dado un flujo no es igual para ambos, por lo que el cambio de temperatura es distinto en ambos materiales, y teniendo en cuenta los resultados de la prueba 4, el tiempo necesario para que se estabilicen las temperaturas por conducción es mucho mayor, por lo que nunca se llega a una estabilidad.
 
@@ -304,7 +347,7 @@ Además se tomarán los factores de vista directos entre las superficies por su 
 
 Se modelaron dos placas de 1000 m x 1000 m con grosor de 0.001 m, a una distancia de 0.1 m
 
-Densidad = //(2700 \frac{kg}{m^3}//) , Calor específico = //(897 \frac{J}{kg.K}//)
+Densidad = \\(2700 \frac{kg}{m^3}\\) , Calor específico = \\(897 \frac{J}{kg.K}\\)
 
 Emisividad = 1
 
@@ -316,39 +359,39 @@ Prueba Teórica:
 
 El flujo de calor para una de las placas será:
 
-//(q*{Total1} = q*{Gain1} - q\_{Lost1}//)
+\\(q*{Total1} = q*{Gain1} - q\_{Lost1}\\)
 
-//(q\_{Lost1} = e_1 \sigma T_1^4//)
+\\(q\_{Lost1} = e_1 \sigma T_1^4\\)
 
-//(q*{Gain1} = F*{21} e_1 e_2 \sigma T_2^4//)
+\\(q*{Gain1} = F*{21} e_1 e_2 \sigma T_2^4\\)
 
 El de la otra placa:
 
-//(q*{Total2} = q*{Gain2} - q\_{Lost2}//)
+\\(q*{Total2} = q*{Gain2} - q\_{Lost2}\\)
 
-//(q\_{Lost2} = e_2 \sigma T_2^4//)
+\\(q\_{Lost2} = e_2 \sigma T_2^4\\)
 
-//(q*{Gain2} = F*{12} e_1 e_2 \sigma T_1^4//)
+\\(q*{Gain2} = F*{12} e_1 e_2 \sigma T_1^4\\)
 
 Siendo:
 
-//(e_1//) = Emisividad de la placa 1
+\\(e_1\\) = Emisividad de la placa 1
 
-//(e_2//) = Emisividad de la placa 2
+\\(e_2\\) = Emisividad de la placa 2
 
-//(F\_{21}//) = Factor de vista de 2 a 1
+\\(F\_{21}\\) = Factor de vista de 2 a 1
 
-//(F\_{12}//) = Factor de vista de 1 a 2
+\\(F\_{12}\\) = Factor de vista de 1 a 2
 
 Luego una vez obtenidos los q para cada placa, se puede calcular la variación de temperatura de la siguiente manera:
 
-//(\Delta T = \frac{Q}{m c}//)
+\\(\Delta T = \frac{Q}{m c}\\)
 
 Siendo Q el calor en joules obtenido, m la masa en kg y c el calor específico
 
 Por lo que si tomamos una cantidad de tiempo t transcurrido, obtenemos que
 
-//(\Delta T = \frac{Q}{m c} = \frac{q _ A _ t}{densidad _ a _ th \* c}//)
+\\(\Delta T = \frac{Q}{m c} = \frac{q _ A _ t}{densidad _ a _ th \* c}\\)
 
 A = Área
 
@@ -356,32 +399,32 @@ th = Thickness
 
 Para el caso particular de esta prueba tenemos que:
 
-//(q\_{Lost1} = 5.6 _ 10^{-8} _ 500^4 = 3500 \frac{W}{m^2}//)
+\\(q\_{Lost1} = 5.6 _ 10^{-8} _ 500^4 = 3500 \frac{W}{m^2}\\)
 
-//(q\_{Gain1} = 0.5 _ 5.6 _ 10^{-8} \* 300^4 = 226.8 \frac{W}{m^2}//)
+\\(q\_{Gain1} = 0.5 _ 5.6 _ 10^{-8} \* 300^4 = 226.8 \frac{W}{m^2}\\)
 
-//(q\_{Lost2} = 5.6 _ 10^{-8} _ 300^4 = 453.6 \frac{W}{m^2}//)
+\\(q\_{Lost2} = 5.6 _ 10^{-8} _ 300^4 = 453.6 \frac{W}{m^2}\\)
 
-//(q\_{Gain2} = 0.5 _ 5.6 _ 10^{-8} \* 500^4 = 1750 \frac{W}{m^2}//)
+\\(q\_{Gain2} = 0.5 _ 5.6 _ 10^{-8} \* 500^4 = 1750 \frac{W}{m^2}\\)
 
-//(q*{Total1} = q*{Gain1} - q\_{Lost1} = -3273.2 \frac{W}{m^2}//)
+\\(q*{Total1} = q*{Gain1} - q\_{Lost1} = -3273.2 \frac{W}{m^2}\\)
 
-//(q*{Total2} = q*{Gain2} - q\_{Lost2} = 1296.4 \frac{W}{m^2}//)
+\\(q*{Total2} = q*{Gain2} - q\_{Lost2} = 1296.4 \frac{W}{m^2}\\)
 
 Si pasaron 10 segundos:
 
-//(\Delta T*1 = \frac{q*{Total1} _ A _ t}{densidad _ a _ th _ c} = \frac{-3273.2 _ 10}{2700 _ 0.001 _ 897} = -13.51 K//)
+\\(\Delta T*1 = \frac{q*{Total1} _ A _ t}{densidad _ a _ th _ c} = \frac{-3273.2 _ 10}{2700 _ 0.001 _ 897} = -13.51 K\\)
 
-//(\Delta T*2 = \frac{q*{Total2} _ A _ t}{densidad _ a _ th _ c} = \frac{1750 _ 10}{2700 _ 0.001 _ 897} = 7.22 K//)
+\\(\Delta T*2 = \frac{q*{Total2} _ A _ t}{densidad _ a _ th _ c} = \frac{1750 _ 10}{2700 _ 0.001 _ 897} = 7.22 K\\)
 
 Por lo que las nuevas temperaturas serían:
 
-//(T_1 = 500 - 13.51 = 486.49 K//)
-//(T_2 = 300 + 7.22 = 307.22 K//)
+\\(T_1 = 500 - 13.51 = 486.49 K\\)
+\\(T_2 = 300 + 7.22 = 307.22 K\\)
 
 Resultados Solver:
 
-![](images/image82.png)
+<center><img src="images/image82.png" ...></center>
 
 Luego de 10 segundos de simulación, el plano de temperatura 500 K paso a una temperatura de 486.4 K, mientras que el plano de 300 K paso a una temperatura de 305.2 K
 
@@ -397,38 +440,38 @@ Emisividad2 = 1
 
 Prueba Teórica:
 
-//(q*{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 _ 10^{-8} \* 500^4 = 2450 \frac{W}{m^2}//)
-//(q_{Gain1} = F\_{21} e*1 e_2 \sigma T_2^4 = 0.5 * 0.7 _ 5.6 _ 10^{-8} \_ 300^4 = 158.76 \frac{W}{m^2}//)
+\\(q*{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 _ 10^{-8} \* 500^4 = 2450 \frac{W}{m^2}\\)
+\\(q_{Gain1} = F\_{21} e*1 e_2 \sigma T_2^4 = 0.5 * 0.7 _ 5.6 _ 10^{-8} \_ 300^4 = 158.76 \frac{W}{m^2}\\)
 
-//(q\_{Lost2} = e*2 \sigma T_2^4 = 5.6 * 10^{-8} \_ 300^4 = 453.6 \frac{W}{m^2}//)
+\\(q\_{Lost2} = e*2 \sigma T_2^4 = 5.6 * 10^{-8} \_ 300^4 = 453.6 \frac{W}{m^2}\\)
 
-//(q*{Gain2} = F*{12} e*1 e_2 \sigma T_1^4 = 0.5 * 0.7 _ 5.6 _ 10^{-8} \_ 500^4 = 1225 \frac{W}{m^2}//)
+\\(q*{Gain2} = F*{12} e*1 e_2 \sigma T_1^4 = 0.5 * 0.7 _ 5.6 _ 10^{-8} \_ 500^4 = 1225 \frac{W}{m^2}\\)
 
-//(q*{Total1} = q*{Gain1} - q\_{Lost1} = -2291.24 \frac{W}{m^2}//)
+\\(q*{Total1} = q*{Gain1} - q\_{Lost1} = -2291.24 \frac{W}{m^2}\\)
 
-//(q*{Total2} = q*{Gain2} - q\_{Lost2} = 771.4 \frac{W}{m^2}//)
+\\(q*{Total2} = q*{Gain2} - q\_{Lost2} = 771.4 \frac{W}{m^2}\\)
 
 Si pasaron 10 segundos:
 
-//(\Delta T*1 = \frac{q*{Total1} _ A _ t}{densidad _ a _ th _ c} = \frac{-2291.4 _ 10}{2700 _ 0.001 _ 897} = -9.46 K//)
+\\(\Delta T*1 = \frac{q*{Total1} _ A _ t}{densidad _ a _ th _ c} = \frac{-2291.4 _ 10}{2700 _ 0.001 _ 897} = -9.46 K\\)
 
-//(\Delta T*2 = \frac{q*{Total2} _ A _ t}{densidad _ a _ th _ c} = \frac{771.4 _ 10}{2700 _ 0.001 _ 897} = 3.18 K//)
+\\(\Delta T*2 = \frac{q*{Total2} _ A _ t}{densidad _ a _ th _ c} = \frac{771.4 _ 10}{2700 _ 0.001 _ 897} = 3.18 K\\)
 
 Por lo que las nuevas temperaturas serían:
 
-//(T_1 = 500 - 9.46 = 490.54 K//)
+\\(T_1 = 500 - 9.46 = 490.54 K\\)
 
-//(T_2 = 300 + 3.18 = 303.18 K//)
+\\(T_2 = 300 + 3.18 = 303.18 K\\)
 
 Resultados Solver:
 
-![](images/image120.png)
+<center><img src="images/image120.png" ...></center>
 
-![](images/image71.png)
+<center><img src="images/image71.png" ...></center>
 
 Luego de 10 segundos de simulación la temperatura de la placa a 500 K pasó a ser 490.49 K
 
-![](images/image102.png)
+<center><img src="images/image102.png" ...></center>
 
 Mientras que la temperatura de la placa a 300 K pasó a ser 303.4 K
 
@@ -444,38 +487,39 @@ Emisividad2 = 0.2
 
 Prueba Teórica:
 
-//(q*{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 _ 10^{-8} \* 500^4 = 2450 \frac{W}{m^2}//)
-//(q_{Gain1} = F\_{21} e*1 e_2 \sigma T_2^4 = 0.5 * 0.7 _ 0.2 _ 5.6 \_ 10^{-8} \* 300^4 = 31.75 \frac{W}{m^2}//)
+\\(q*{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 _ 10^{-8} \* 500^4 = 2450 \frac{W}{m^2}\\)
+\\(q_{Gain1} = F\_{21} e*1 e_2 \sigma T_2^4 = 0.5 * 0.7 _ 0.2 _ 5.6 \_ 10^{-8} \* 300^4 = 31.75 \frac{W}{m^2}\\)
 
-//(q\_{Lost2} = e*2 \sigma T_2^4 = 0.2 * 5.6 \_ 10^{-8} \* 300^4 = 90.72 \frac{W}{m^2}//)
+\\(q\_{Lost2} = e*2 \sigma T_2^4 = 0.2 * 5.6 \_ 10^{-8} \* 300^4 = 90.72 \frac{W}{m^2}\\)
 
-//(q*{Gain2} = F*{12} e*1 e_2 \sigma T_1^4 = 0.5 * 0.2 _ 0.7 _ 5.6 \_ 10^{-8} \* 500^4 = 245 \frac{W}{m^2}//)
+\\(q*{Gain2} = F*{12} e*1 e_2 \sigma T_1^4 = 0.5 * 0.2 _ 0.7 _ 5.6 \_ 10^{-8} \* 500^4 = 245 \frac{W}{m^2}\\)
 
-//(q*{Total1} = q*{Gain1} - q\_{Lost1} = -2418.25 \frac{W}{m^2}//)
+\\(q*{Total1} = q*{Gain1} - q\_{Lost1} = -2418.25 \frac{W}{m^2}\\)
 
-//(q*{Total2} = q*{Gain2} - q\_{Lost2} = 154.28 \frac{W}{m^2}//)
+\\(q*{Total2} = q*{Gain2} - q\_{Lost2} = 154.28 \frac{W}{m^2}\\)
 
 Si pasaron 10 segundos:
 
-//(\Delta T*1 = \frac{q*{Total1} _ A _ t}{densidad _ a _ th _ c} = \frac{-2418.25 _ 10}{2700 _ 0.001 _ 897} = -9.98 K//)
+\\(\Delta T*1 = \frac{q*{Total1} _ A _ t}{densidad _ a _ th _ c} = \frac{-2418.25 _ 10}{2700 _ 0.001 _ 897} = -9.98 K\\)
 
-//(\Delta T*2 = \frac{q*{Total2} _ A _ t}{densidad _ a _ th _ c} = \frac{154.28 _ 10}{2700 _ 0.001 _ 897} = 0.63 K//)
+\\(\Delta T*2 = \frac{q*{Total2} _ A _ t}{densidad _ a _ th _ c} = \frac{154.28 _ 10}{2700 _ 0.001 _ 897} = 0.63 K\\)
 
 Por lo que las nuevas temperaturas serían:
 
-//(T_1 = 500 - 9.98 = 490.02 K//)
+\\(T_1 = 500 - 9.98 = 490.02 K\\)
 
-//(T_2 = 300 + 0.63 = 300.63 K//)
+\\(T_2 = 300 + 0.63 = 300.63 K\\)
 
 Resultados Solver:
 
-![](images/image88.png)
+<center><img src="images/image88.png" ...></center>
 
-![](images/image97.png)
+<center><img src="images/image97.png" ...></center>
+
 
 Luego de 10 segundos, la placa de 500 K esta a una temperatura de 489.9 K
 
-![](images/image87.png)
+<center><img src="images/image87.png" ...></center>
 
 Luego de 10 segundos, la placa de 300 K esta a una temperatura de 300.65 K
 
@@ -509,7 +553,7 @@ A esto se le suma el flujo (entrante y saliente) entre esos instantes para cada 
 
 Se obtuvo el siguiente resultado:
 
-![](images/energy_diff.png)
+<center><img src="images/energy_diff.png" ...></center>
 
 Se puede observar que se conserva la energia a lo largo de la simulación.
 
@@ -517,21 +561,24 @@ Se puede observar que se conserva la energia a lo largo de la simulación.
 
 Se realizaron simulaciones en distintas condiciones de mesh y time_step del siguiente modelo:
 
-![](images/image125.png) ![](images/image127.png) ![](images/image131.png)
+<center><img src="images/image125.png" ...></center>
+<center><img src="images/image127.png" ...></center>
+<center><img src="images/image131.png" ...></center>
 
 Se tomaron los siguientes puntos para las comparaciones:
 
 Centro del panel:
 
-![](images/image132.png)
+<center><img src="images/image132.png" ...></center>
+
 
 Piramide oculta:
 
-![](images/image136.png)
+<center><img src="images/image136.png" ...></center>
 
 Cara Interior:
 
-![](images/image141.png)
+<center><img src="images/image141.png" ...></center>
 
 ### Convergencia en tiempo
 
@@ -541,43 +588,43 @@ Los resultados obtenidos fueron los siguientes:
 
 Centro del panel:
 
-![](images/time_convergence_Center%20of%20Panel.png)
+<center><img src="images/time_convergence_Center%20of%20Panel.png" ...></center>
 
 Piramide oculta:
 
-![](images/time_convergence_Hidden%20Pyramid.png)
+<center><img src="images/time_convergence_Hidden%20Pyramid.png" ...></center>
 
 Cara Interior:
 
-![](images/time_convergence_Interior%20Face.png)
+<center><img src="images/time_convergence_Interior%20Face.png" ...></center>
 
 El error relativo comparando con la simulación de time_step 1 segundo fue el siguiente (0 sin error, 1 100% de error):
 
 Centro del panel:
 
-![](images/time_convergence_relative_error_Center%20of%20Panel.png)
+<center><img src="images/time_convergence_relative_error_Center%20of%20Panel.png" ...></center>
 
 Piramide oculta:
 
-![](images/time_convergence_relative_error_Hidden%20Pyramid.png)
+<center><img src="images/time_convergence_relative_error_Hidden%20Pyramid.png" ...></center>
 
 Cara Interior:
 
-![](images/time_convergence_relative_error_Interior%20Face.png)
+<center><img src="images/time_convergence_relative_error_Interior%20Face.png" ...></center>
 
 La desviación estandar comparando con la simulación de time_step 1 segundo fue la siguiente:
 
 Centro del panel:
 
-![](images/time_convergence_std_deviation_Center%20of%20Panel.png)
+<center><img src="images/time_convergence_std_deviation_Center%20of%20Panel.png" ...></center>
 
 Piramide oculta:
 
-![](images/time_convergence_std_deviation_Hidden%20Pyramid.png)
+<center><img src="images/time_convergence_std_deviation_Hidden%20Pyramid.png" ...></center>
 
 Cara Interior:
 
-![](images/time_convergence_std_deviation_Interior%20Face.png)
+<center><img src="images/time_convergence_std_deviation_Interior%20Face.png" ...></center>
 
 ### Convergencia en malla
 
@@ -587,40 +634,39 @@ Los resultados obtenidos fueron los siguientes:
 
 Centro del panel:
 
-![](images/mesh_convergence_Center%20of%20Panel.png)
+<center><img src="images/mesh_convergence_Center%20of%20Panel.png" ...></center>
 
 Piramide oculta:
 
-![](images/mesh_convergence_Hidden%20Pyramid.png)
+<center><img src="images/mesh_convergence_Hidden%20Pyramid.png" ...></center>
 
 Cara Interior:
 
-![](images/mesh_convergence_Interior%20Face.png)
+<center><img src="images/mesh_convergence_Interior%20Face.png" ...></center>
 
 El error relativo comparando con la simulación de 5539 elementos fue el siguiente (0 sin error, 1 100% de error):
 
 Centro del panel:
 
-![](images/mesh_convergence_relative_error_Center%20of%20Panel.png)
+<center><img src="images/mesh_convergence_relative_error_Center%20of%20Panel.png" ...></center>
 
 Piramide oculta:
 
-![](images/mesh_convergence_relative_error_Hidden%20Pyramid.png)
+<center><img src="images/mesh_convergence_relative_error_Hidden%20Pyramid.png" ...></center>
 
 Cara Interior:
 
-![](images/mesh_convergence_relative_error_Interior%20Face.png)
-
+<center><img src="images/mesh_convergence_relative_error_Interior%20Face.png" ...></center>
 La desviación estandar comparando con la simulación de 5539 elementos fue la siguiente:
 
 Centro del panel:
 
-![](images/mesh_convergence_std_deviation_Center%20of%20Panel.png)
+<center><img src="images/mesh_convergence_std_deviation_Center%20of%20Panel.png" ...></center>
 
 Piramide oculta:
 
-![](images/mesh_convergence_std_deviation_Hidden%20Pyramid.png)
+<center><img src="images/mesh_convergence_std_deviation_Hidden%20Pyramid.png" ...></center>
 
 Cara Interior:
 
-![](images/mesh_convergence_std_deviation_Interior%20Face.png)
+<center><img src="images/mesh_convergence_std_deviation_Interior%20Face.png" ...></center>

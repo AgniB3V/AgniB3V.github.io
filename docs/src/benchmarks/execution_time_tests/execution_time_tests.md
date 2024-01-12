@@ -27,34 +27,34 @@ PC4: (CTA)
 
 Los tiempos de ejecución del preprocesador fueron los siguientes:
 
-![](images/timings_Preprocesador.png)
+<center><img src="images/timings_Preprocesador.png" ...></center>
 
 ## Solver CPU
 
 Los tiempos de ejecución del solver en CPU fueron los siguientes:
 
-![](images/timings_Solver%20CPU.png)
+<center><img src="images/timings_Solver%20CPU.png" ...></center>
 
 ## Solver GPU
 
 Los tiempos de ejecución del solver en GPU fueron los siguientes:
 
-![](images/timings_Solver%20GPU.png)
+<center><img src="images/timings_Solver%20GPU.png" ...></center>
 
 ## Total CPU
 
 Los tiempos de ejecución totales en CPU fueron los siguientes:
 
-![](images/timings_Total%20CPU.png)
+<center><img src="images/timings_Total%20CPU.png" ...></center>
 
 ## Total GPU
 
 Los tiempos de ejecución totales en GPU fueron los siguientes:
 
-![](images/timings_Total%20GPU.png)
+<center><img src="images/timings_Total%20GPU.png" ...></center>
 
 ## CPU vs GPU
 
 Se muestra una comparación del tiempo de ejecución del solver en CPU vs GPU para la PC1
 
-![](images/timings_cpu_vs_gpu.png)
+<center><img src="images/timings_cpu_vs_gpu.png" ...></center>
