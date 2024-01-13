@@ -345,17 +345,21 @@ En esta prueba la idea es calcular de manera teórica la transferencia de calor 
 
 Además se tomarán los factores de vista directos entre las superficies por su mayor facilidad de cálculo, para que los resultados sean comparables, también se toman estos en la simulación.
 
-Se modelaron dos placas de 1000 m x 1000 m con grosor de 0.001 m, a una distancia de 0.1 m
+Se modelaron dos placas planas paraleleas con las siguientes características:
 
-Densidad = \\(2700 \frac{kg}{m^3}\\) , Calor específico = \\(897 \frac{J}{kg.K}\\)
+- Tamaño de \\(1000 \ m \times 1000 \ m \\)
+- Grosor de \\(0.001 \ m \\)
+- Distancia entre las placas de \\(0.1 \ m \\)
+- Las propiedades del material son:
+  - Densidad de \\(2700 \frac{kg}{m^3}\\)
+  - Calor específico de \\(897 \frac{J}{kg \ K}\\)
+  - Conductividad térmica de \\(0 \frac{W}{K \ m}\\)
+- Emisividades para ambas placas igual a 1
+- La temperatura inicial de la placa 1 es de \\(500^\circ K\\)
+- La temperatura inicial de la placa 2 es de \\(300^\circ K\\)
+- Flujo constante de \\(100 \frac{W}{m^2}\\) para todo el cubo
 
-Emisividad = 1
-
-Temperatura inicial placa 1 = 500 K
-
-Temperatura inicial placa 2 = 300 K
-
-Prueba Teórica:
+#### Prueba Teórica:
 
 El flujo de calor para una de las placas será:
 
@@ -423,7 +427,9 @@ Por lo que las nuevas temperaturas serían:
 	
 \\(T_2 = 300 + 7.22 = 307.22 K\\)
 
-Resultados Solver:
+##### Resultados Solver:
+
+Se obtuvieron los siguientes resultados tras simular con el solver de Agni:
 
 <center><img src="images/image82.png" ...></center>
 
@@ -433,13 +439,22 @@ Por lo que las temperaturas dan bastante similar, y se puede entender la leve di
 
 ### Prueba 2: Placas paralelas distinta emisividad
 
-Igual que la Prueba 1, pero esta vez
+Se modelaron dos placas planas paraleleas con las siguientes características:
 
-Emisividad1 = 0.7
+- Tamaño de \\(1000 \ m \times 1000 \ m \\)
+- Grosor de \\(0.001 \ m \\)
+- Distancia entre las placas de \\(0.1 \ m \\)
+- Las propiedades del material son:
+  - Densidad de \\(2700 \frac{kg}{m^3}\\)
+  - Calor específico de \\(897 \frac{J}{kg \ K}\\)
+  - Conductividad térmica de \\(0 \frac{W}{K \ m}\\)
+- Emisividad de la placa 1 de 0.7
+- Emisividad de la placa 2 de 1
+- La temperatura inicial de la placa 1 es de \\(500^\circ K\\)
+- La temperatura inicial de la placa 2 es de \\(300^\circ K\\)
+- Flujo constante de \\(100 \frac{W}{m^2}\\) para todo el cubo
 
-Emisividad2 = 1
-
-Prueba Teórica:
+#### Prueba Teórica:
 
 \\(q_{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 * 10^{-8} * 500^4 = 2450 \frac{W}{m^2}\\)
 	
@@ -465,7 +480,9 @@ Por lo que las nuevas temperaturas serían:
 
 \\(T_2 = 300 + 3.18 = 303.18 K\\)
 
-Resultados Solver:
+#### Resultados Solver:
+
+Se obtuvieron los siguientes resultados tras simular con el solver de Agni:
 
 <center><img src="images/image120.png" ...></center>
 
@@ -481,13 +498,22 @@ Igual que el ejemplo anterior, la temperatura de la placa mas fria difiere levem
 
 ### Prueba 3: Placas paralelas distinta emisividad 2
 
-Igual que la Prueba 1, pero esta vez
+Se modelaron dos placas planas paraleleas con las siguientes características:
 
-Emisividad1 = 0.7
+- Tamaño de \\(1000 \ m \times 1000 \ m \\)
+- Grosor de \\(0.001 \ m \\)
+- Distancia entre las placas de \\(0.1 \ m \\)
+- Las propiedades del material son:
+  - Densidad de \\(2700 \frac{kg}{m^3}\\)
+  - Calor específico de \\(897 \frac{J}{kg \ K}\\)
+  - Conductividad térmica de \\(0 \frac{W}{K \ m}\\)
+- Emisividad de la placa 1 de 0.7
+- Emisividad de la placa 2 de 0.2
+- La temperatura inicial de la placa 1 es de \\(500^\circ K\\)
+- La temperatura inicial de la placa 2 es de \\(300^\circ K\\)
+- Flujo constante de \\(100 \frac{W}{m^2}\\) para todo el cubo
 
-Emisividad2 = 0.2
-
-Prueba Teórica:
+#### Prueba Teórica:
 
 \\(q_{Lost1} = e_1 \sigma T_1^4 = 0.7 * 5.6 * 10^{-8} * 500^4 = 2450 \frac{W}{m^2}\\)
 	
@@ -513,7 +539,9 @@ Por lo que las nuevas temperaturas serían:
 
 \\(T_2 = 300 + 0.63 = 300.63 K\\)
 
-Resultados Solver:
+#### Resultados Solver:
+
+Se obtuvieron los siguientes resultados tras simular con el solver de Agni:
 
 <center><img src="images/image88.png" ...></center>
 
