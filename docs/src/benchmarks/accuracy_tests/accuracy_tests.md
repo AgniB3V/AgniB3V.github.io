@@ -345,7 +345,7 @@ En esta prueba la idea es calcular de manera teórica la transferencia de calor 
 
 Además se tomarán los factores de vista directos entre las superficies por su mayor facilidad de cálculo, para que los resultados sean comparables, también se toman estos en la simulación.
 
-Se modelaron dos placas planas paraleleas con las siguientes características:
+Se modelaron dos placas planas paralelas con las siguientes características:
 
 - Tamaño de \\(1000 \ m \times 1000 \ m \\)
 - Grosor de \\(0.001 \ m \\)
@@ -357,7 +357,6 @@ Se modelaron dos placas planas paraleleas con las siguientes características:
 - Emisividades para ambas placas igual a 1
 - La temperatura inicial de la placa 1 es de \\(500^\circ K\\)
 - La temperatura inicial de la placa 2 es de \\(300^\circ K\\)
-- Flujo constante de \\(100 \frac{W}{m^2}\\) para todo el cubo
 
 #### Prueba Teórica:
 
@@ -439,7 +438,7 @@ Por lo que las temperaturas dan bastante similar, y se puede entender la leve di
 
 ### Prueba 2: Placas paralelas distinta emisividad
 
-Se modelaron dos placas planas paraleleas con las siguientes características:
+Se modelaron dos placas planas paralelas con las siguientes características:
 
 - Tamaño de \\(1000 \ m \times 1000 \ m \\)
 - Grosor de \\(0.001 \ m \\)
@@ -452,7 +451,6 @@ Se modelaron dos placas planas paraleleas con las siguientes características:
 - Emisividad de la placa 2 de 1
 - La temperatura inicial de la placa 1 es de \\(500^\circ K\\)
 - La temperatura inicial de la placa 2 es de \\(300^\circ K\\)
-- Flujo constante de \\(100 \frac{W}{m^2}\\) para todo el cubo
 
 #### Prueba Teórica:
 
@@ -498,7 +496,7 @@ Igual que el ejemplo anterior, la temperatura de la placa mas fria difiere levem
 
 ### Prueba 3: Placas paralelas distinta emisividad 2
 
-Se modelaron dos placas planas paraleleas con las siguientes características:
+Se modelaron dos placas planas paralelas con las siguientes características:
 
 - Tamaño de \\(1000 \ m \times 1000 \ m \\)
 - Grosor de \\(0.001 \ m \\)
