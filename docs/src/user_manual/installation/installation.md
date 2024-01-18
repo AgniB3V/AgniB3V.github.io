@@ -13,7 +13,9 @@ sh install
 
 Tras haber finalizado la instalación, se podrá iniciar AgniB3V haciendo click derecho sobre el archivo `AgniB3V` y seleccionando _"Ejecutar como Programa"_.
 
-Si se experimentan errores al momento de ejecutar el solver, puede seguir las instrucciones a continuación para intentar solucionarlos:
+## Errores conocidos
+
+Si se experimentan errores al momento de ejecutar el solver, puede seguir las siguientes instrucciones:
 
 En primer lugar, asegurese de contar con los últimos drivers instalados para su proveedor de tarjeta gráfica. Obtenga los drivers para [AMD](https://www.amd.com/es/support) o [Nvidia](https://la.nvidia.com/Download/index.aspx) de fuentes oficiales.
 
