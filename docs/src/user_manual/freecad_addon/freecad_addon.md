@@ -55,10 +55,6 @@ Como podemos ver a continuación, se regeneró la malla con un detalle mucho may
 <center><img src="images/addon9.png" ...></center>
 <center><i></i></center>
 
-## Definición de Propiedades Globales
-
-TODO
-
 ## Asignación de Materiales
 
 Para crear un nuevo material, se debe presionar el botón de edición de materiales, como se muestra a continuación:
@@ -93,10 +89,63 @@ No se deben asignar materiales a ejes, ya que este no es soportado por el sistem
 <center><img src="images/addon15.png" ...></center>
 <center><i></i></center>
 
-## Asignación de Condiciones
+## Asignación de Condiciones de Contorno
 
-TODO
+Para crear una nueva condición de contorno, se debe presionar el botón de edición de condiciones, como se muestra a continuación:
+
+<center><img src="images/addon16.png" ...></center>
+<center><i></i></center>
+
+Esto abrirá una ventana con el editor de condiciones, en el cual se debe presionar "Add Condition" para agregar una nueva condición.
+
+<center><img src="images/addon17.png" ...></center>
+<center><i></i></center>
+
+Se debe poner un nombre, "Flujo1" en este caso, y presionar "OK".
+
+<center><img src="images/addon18.png" ...></center>
+<center><i></i></center>
+
+Esto creará la nueva condición, la cual se puede editar presionando sobre la misma.
+
+<center><img src="images/addon19.png" ...></center>
+<center><i></i></center>
+
+Una vez creada, aparecerá en el panel del modelado con el nombre elegido, bajo el grupo de "\_CONDITIONS\_"
+
+<center><img src="images/addon20.png" ...></center>
+<center><i></i></center>
+
+Finalmente, para asignar la condición, se debe hacer doble click en el objeto de la condición en el panel "Model". Esto abrirá un cuadro en el que se podrá asignar la condición tanto a sólidos como a caras.
+
+No se deben asignar condiciones a ejes, ya que este no es soportado por el sistema y romperá al momento de la exportación del mallado y propiedades.
+
+<center><img src="images/addon21.png" ...></center>
+<center><i></i></center>
+
+
+## Edición de Propiedades Globales
+
+Para editar las propiedades globales, se debe presionar el botón de edición de propiedades globales, como se muestra a continuación:
+
+<center><img src="images/addon22.png" ...></center>
+<center><i></i></center>
+
+Esto abrirá una ventana con el editor de propiedades globales. Aquí se podrán editar propiedades tanto correspondiente al sistema como a la simulación en sí.
+
+<center><img src="images/addon23.png" ...></center>
+<center><i></i></center>
 
 ## Exportación del Mallado y Propiedades
 
-TODO
+Para exportar el mallado y las propiedaes, se debe presionar el botón de exportado, como se muestra a continuación:
+
+<center><img src="images/addon24.png" ...></center>
+<center><i></i></center>
+
+Esto abrirá una ventana para la exportación. En esta ventana se podrá editar el path de exportación, que por defecto será la ubicación del proyecto. Se recomienda no editar esta ubicación a menos que sea necesario, ya que puede traer problemas en la ejecución de los pasos siguientes.
+
+<center><img src="images/addon25.png" ...></center>
+<center><i></i></center>
+
+Para realizar el exportado, se debe presionar en el botón "Export". Esto generará, en el directorio seleccionado, un archivo "mesh.vtk", con la representación del mallado, y un archivo "properties.json", con las propiedades globales, los materiales y las condiciones de contorno.
