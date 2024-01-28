@@ -8,6 +8,7 @@
   - [Instalación](./user_manual/installation/installation.md)
   - [Interfaz de Usuario](./user_manual/gui/gui.md)
   - [GMAT](./user_manual/gmat/gmat.md)
+    - [GMAT en Agni](./user_manual/gmat_agni/gmat_agni.md)
   - [FreeCAD](./user_manual/freecad/freecad.md)
     - [Modelado](./user_manual/freecad_model/freecad_model.md)
     - [Agni Addon](./user_manual/freecad_addon/freecad_addon.md)
