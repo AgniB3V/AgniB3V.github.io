@@ -2,47 +2,47 @@
 
 A continuación se mostrará un ejemplo sencillo de modelado con el objetivo de contar con un modelo para ejemplificar el uso del addon más adelante.
 
-Al abrir FreeCAD nos encontraremos con la siguiente ventana:
+Al abrir FreeCAD se encontrará con la siguiente ventana:
 
 <center><img src="images/freecad1.png" ...></center>
 <center><i></i></center>
 
-Para comenzar, iremos al workbench *Part*.
+Para comenzar, se debe ir al workbench *Part*.
 
 <center><img src="images/freecad2.png" ...></center>
 <center><i></i></center>
 
-Aquí nos encontraremos elementos para crear como cubos, cilindros, esferas, etc. Crearemos tres elementos, un cubo, un toro y un cilindro.
+Aquí se encontrarán elementos para crear como cubos, cilindros, esferas, etc. Se crearán tres elementos, un cubo, un toro y un cilindro.
 
 <center><img src="images/freecad3.png" ...></center>
 <center><i></i></center>
 
-Para mover los elementos, seleccionaremos uno de ellos, haremos click derecho y presionaremos en "Transform".
+Para mover los elementos, se debe seleccionar uno de ellos, hacer click derecho y presionar en "Transform".
 
 <center><img src="images/freecad4.png" ...></center>
 <center><i></i></center>
 
-Una vez los movamos, tendremos un resultado como el siguiente:
+Una vez movidos, se verá un resultado como el siguiente:
 
 <center><img src="images/freecad5.png" ...></center>
 <center><i></i></center>
 
-Para cambiar el tamaño de los elementos, seleccionaremos en el elemento que deseemos y, en la pestaña de "Data", podremos variar radio, longitud, entre otros.
+Para cambiar el tamaño de los elementos, se debe seleccionar en el elemento deseado y, en la pestaña de "Data", variar radio, longitud, entre otros.
 
 <center><img src="images/freecad6.png" ...></center>
 <center><i></i></center>
 
-En este caso, variaremos el radio del toro, obteniendo el siguiente resultado:
+En este caso, se varió el radio del toro, obteniendo el siguiente resultado:
 
 <center><img src="images/freecad7.png" ...></center>
 <center><i></i></center>
 
-Una vez posicionados y redimensionados los elementos, los seleccionaremos:
+Una vez posicionados y redimensionados los elementos, se seleccionarán:
 
 <center><img src="images/freecad8.png" ...></center>
 <center><i></i></center>
 
-Y a continuación, crearemos un "Fusion" y un "Boolean Fragments".
+Y, a continuación, se crearán un "Fusion" y un "Boolean Fragments".
 
 <center><img src="images/freecad10.png" ...></center>
 <center><i></i></center>
@@ -50,7 +50,7 @@ Y a continuación, crearemos un "Fusion" y un "Boolean Fragments".
 <center><img src="images/freecad11.png" ...></center>
 <center><i></i></center>
 
-Ahora si, podremos visualizar el resultado final del modelo básico creado:
+Finalmente, se podrá visualizar el resultado final del modelo básico creado:
 
 <center><img src="images/freecad9.png" ...></center>
 <center><i></i></center>
