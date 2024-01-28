@@ -21,7 +21,7 @@ Esto generará automáticamente una malla de triángulos bidimensionales de prim
 <center><img src="images/addon3.png" ...></center>
 <center><i></i></center>
 
-Si hacemos doble click en el objeto de la malla, se abrira un cuadro el cual permite editar el tamaño máximo y mínimo de elemento. En caso de cambiar uno de estos parámetros, se debe recrear la malla presionando el botón "Apply".
+Si se hace doble click en el objeto de la malla, se abrirá un cuadro el cual permite editar el tamaño máximo y mínimo de elemento. En caso de cambiar uno de estos parámetros, se debe recrear la malla presionando el botón "Apply".
 
 Es importante no cambiar los valores de "Element dimension" y "Element order" para garantizar el correcto funcionamiento del sistema.
 
