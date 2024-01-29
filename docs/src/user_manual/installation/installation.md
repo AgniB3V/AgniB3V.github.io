@@ -8,7 +8,7 @@ En la terminal, escribir uno a uno los siguientes comandos:
 ```bash
 unzip AgniB3V-v1.0.0.zip -d Agni
 cd Agni
-sh install
+bash install
 ```
 
 Tras haber finalizado la instalación, se podrá iniciar AgniB3V haciendo click derecho sobre el archivo `AgniB3V` y seleccionando _"Ejecutar como Programa"_.
