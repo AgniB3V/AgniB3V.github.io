@@ -82,8 +82,8 @@ Las propiedades de los materiales son:
 - `specific_heat`: Calor específico \\([\frac{J}{kg \ K}]\\).
 - `density`: Densidad \\([\frac{kg}{m^3}]\\).
 - `thickness`: Grosor \\([m]\\).
-- `alpha_sun`: Absorptividad en frecuencias del espectro solar. Escalar positivo menor a uno.
-- `alpha_ir`: Absorptividad en el espectro infrarojo. Escalar positivo menor a uno.
+- `alpha_sun`: Absortividad en frecuencias del espectro solar. Escalar positivo menor a uno.
+- `alpha_ir`: Absortividad en el espectro infrarojo. Escalar positivo menor a uno.
 
 
 Los parámetros `thermal_conductivity`, `specific_heat`, `density` y `thickness` pueden ser alterados manualmente sin necesidad de volver a ejecutar el preprocesador. 

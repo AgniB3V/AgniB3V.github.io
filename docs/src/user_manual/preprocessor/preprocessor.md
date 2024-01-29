@@ -89,8 +89,8 @@ Se divide en dos subsecciones.  "elements", en donde se indica un array con los 
 * "specific_heat": Calor específico (\\( \frac{J}{kg . K}\\)).
 * "density": Densidad (\\( \frac{kg}{m^3}\\)).
 * "thickness": Grosor (\\(m\\)).
-* "alpha_sun": Absorptividad en frecuencias del espectro solar. Escalar positivo menor a uno.
-* "alpha_ir": Absorptividad en el espectro infrarojo. Escalar positivo menor a uno.
+* "alpha_sun": Absortividad en frecuencias del espectro solar. Escalar positivo menor a uno.
+* "alpha_ir": Absortividad en el espectro infrarojo. Escalar positivo menor a uno.
 
 ### Conditions
 ```
@@ -117,7 +117,7 @@ Se divide en dos subsecciones.  "elements", en donde se indica un array con los 
 * "flux": Flujo constante incidente (\\( \frac{W}{m^2}\\)).
 * "initial_temperature_on": Considerar valor de temperatura inicial. Booleano.
 * "initial_temperature": Temperatura inicial del elemento(\\(K\\)).
-* "two_sides_emission": Indica si debe considerarse la orientación del elemento (dirección de su normal según la regla de la mano derecha) al proyectar rayos elemento a elemento.
+* "two_sides_radiation": Indica si debe considerarse la orientación del elemento (dirección de su normal según la regla de la mano derecha) al proyectar rayos elemento a elemento.
 
 ## Procesamiento de factores de vista
 
