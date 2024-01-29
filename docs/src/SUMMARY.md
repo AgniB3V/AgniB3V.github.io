@@ -5,6 +5,7 @@
 - [AgniB3V](agnib3v.md)
 
 - [Manual de Usuario](./user_manual/user_manual.md)
+
   - [Instalación](./user_manual/installation/installation.md)
   - [Interfaz de Usuario](./user_manual/gui/gui.md)
   - [GMAT](./user_manual/gmat/gmat.md)
@@ -27,7 +28,3 @@
     - [Modelo teórico](./technical_manual/theoretical_model/theoretical_model.md)
     - [Modelo FEM](./technical_manual/fem/fem.md)
     - [Paralelización en GPU](./technical_manual/gpu_parallelization/gpu_parallelization.md)
-
-- [Benchmarks](./benchmarks/benchmarks.md)
-  - [Tests de Precisión](./benchmarks/accuracy_tests/accuracy_tests.md)
-  - [Tests de Tiempo de Ejecución](./benchmarks/execution_time_tests/execution_time_tests.md)

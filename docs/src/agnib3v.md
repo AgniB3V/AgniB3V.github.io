@@ -35,16 +35,13 @@ La documentación se divide en las siguientes secciones:
 
 - [📁 Manual de Usuario](../user_manual/user_manual.md)
 - [📁 Manual técnico](../technical_manual/technical_manual.md)
-- [📁 Benchmarks](../benchmarks/benchmarks.md)
-
 
 
 ## Consideraciones
 
 En el estado actual del sistema solo se permiten orbitas circulares y aptitud del satélite Sun Pointing.
 
-Se deja a discreción del usuario la verificación de la precisión de los resultados generados por el presente software por fuera de los [Benchmarks](../benchmarks/benchmarks.md), especialmente en el cálculo del albedo. Se recomienda utilizar el software con cautela.
-
+Se deja a discreción del usuario la verificación de la precisión de los resultados generados por el presente software por fuera de los benchmarks, especialmente en el cálculo del albedo. Se recomienda utilizar el software con cautela.
 
 
 ## Autores
