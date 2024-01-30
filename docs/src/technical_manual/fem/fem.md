@@ -165,7 +165,6 @@ Y la numeración local:
   <img width="300" src="images/image2.png">
 </p>
 
-<br/>
 El proceso de construcción de una matriz global consiste en utilizar los identificadores globales de los nodos de cada matriz local para agregar los resultados en la matriz global. 
 De esta forma, por cada coordenada \\((x,y)\\) de identificadores locales dentro de una matriz local existirá un mapeo a una coordenada \\((u,v)\\) de identificadores globales en la matriz global.
 
@@ -196,7 +195,6 @@ Luego, si esta ecuación es discretizada en función del tiempo haciendo uso del
 (\frac{1}{\Delta t}[M] - (1 - \theta) [K]) \ \{T\}^n + (1 - \theta) \{f\}^n + \theta \{f\}^{n+1} 
 \\]
 
-<br/>
 Eligiendo \\(\theta = 0.5\\) se obtiene el conocido esquema semi-implícito por método de Crank-Nicolson.
 
 Adicionalmente, en pos de mantener la linealidad de la ecuación al añadir a esta los términos cuarticos referentes a radiación, se decidió hacer uso de una corrección del método tal que se eliminase su característica implícita en el vector de flujos.

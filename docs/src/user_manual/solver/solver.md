@@ -36,22 +36,20 @@ Los parámetros necesarios para ejecutar el solver que se encuentran en el `prop
 }
 ```
 
-- `orbital_period`: Indica el periodo de la orbita, es generado por el preprocesador.
-- `albedo`: Factor de albedo.
-- `earth_ir`: Flujo de calor proveniente por la radiación IR de la tierra \\([\frac{W}{m^2}]\\).
-- `solar_constant`: Constante de flujo solar \\([\frac{W}{m^2}]\\).
-- `simulation_time`: Tiempo de simulación expresado en segundos.
-- `time_step`: Paso de tiempo que usara la simulación, esta expresado en segundos.
-- `snap_perior`: Indica cada cuanto tiempo se guardara un resultado, esta expresado en segundos.
-- `orbit_divisions`: Cantidad de divisiones en la orbita para los factores de vista.
-- `eclipse_start`: Indica cuando empieza el eclipse, es generado por el preprocesador.
-- `eclipse_end`: Indica cuando termina el eclipse, es generado por el preprocesador.
+- "orbital_period": Indica el periodo de la orbita, es generado por el preprocesador.
+- "albedo": Factor de albedo.
+- "earth_ir": Flujo de calor proveniente por la radiación IR de la tierra \\([\frac{W}{m^2}]\\).
+- "solar_constant": Constante de flujo solar \\([\frac{W}{m^2}]\\).
+- "simulation_time": Tiempo de simulación expresado en segundos.
+- "time_step": Paso de tiempo que usara la simulación, esta expresado en segundos.
+- "snap_perior": Indica cada cuanto tiempo se guardara un resultado, esta expresado en segundos.
+- "orbit_divisions": Cantidad de divisiones en la orbita para los factores de vista.
+- "eclipse_start": Indica cuando empieza el eclipse, es generado por el preprocesador.
+- "eclipse_end": Indica cuando termina el eclipse, es generado por el preprocesador.
 
-
-Los parámetros `albedo`, `earth_ir`, `solar_constant`, `initial_temperature`, `simulation_time`, `time_step` y `snap_period` pueden ser alterados manualmente para 
-modificar las caracteristicas de la simulación sin necesidad de volver a ejecutar el preprocesador, lo que disminuye el tiempo total empleado. 
+Los parámetros "albedo", "earth_ir", "solar_constant", "initial_temperature", "simulation_time", "time_step" y "snap_period" pueden ser alterados manualmente para
+modificar las caracteristicas de la simulación sin necesidad de volver a ejecutar el preprocesador, lo que disminuye el tiempo total empleado.
 Una modificación en cualquiera de los parámetros restantes requiere volver a ejecutar el preprocesador para el correcto funcionamiento de la simulación.
-
 
 ### Materials
 
@@ -78,16 +76,14 @@ Se divide en dos subsecciones, siendo la primera "properties", en donde se espec
 
 Las propiedades de los materiales son:
 
-- `thermal_conductivity`: Conductividad térmica \\([\frac{W}{m \ K}]\\).
-- `specific_heat`: Calor específico \\([\frac{J}{kg \ K}]\\).
-- `density`: Densidad \\([\frac{kg}{m^3}]\\).
-- `thickness`: Grosor \\([m]\\).
-- `alpha_sun`: Absortividad en frecuencias del espectro solar. Escalar positivo menor a uno.
-- `alpha_ir`: Absortividad en el espectro infrarojo. Escalar positivo menor a uno.
+- "thermal_conductivity": Conductividad térmica \\([\frac{W}{m \ K}]\\).
+- "specific_heat": Calor específico \\([\frac{J}{kg \ K}]\\).
+- "density": Densidad \\([\frac{kg}{m^3}]\\).
+- "thickness": Grosor \\([m]\\).
+- "alpha_sun": Absortividad en frecuencias del espectro solar. Escalar positivo menor a uno.
+- "alpha_ir": Absortividad en el espectro infrarojo. Escalar positivo menor a uno.
 
-
-Los parámetros `thermal_conductivity`, `specific_heat`, `density` y `thickness` pueden ser alterados manualmente sin necesidad de volver a ejecutar el preprocesador. 
-
+Los parámetros "thermal_conductivity", "specific_heat", "density" y "thickness" pueden ser alterados manualmente sin necesidad de volver a ejecutar el preprocesador.
 
 ### Conditions
 
@@ -114,25 +110,24 @@ Se divide en dos subsecciones, siendo la primera "properties", en donde se espec
 
 Las características de una condición son:
 
-- `flux_on`: Indica si se debe considerar el valor del parametro `flux`
-- `flux`: Flujo constante incidente (\\(\frac{W}{m^2}\\)).
-- `initial_temperature_on`: Indica si se debe considerar el valor del parametro `initital_temperature`
-- `initial_temperature`: Temperatura inicial (\\(W\\)).
-- `two_sides_radiation`: Indica si los elementos emiten radiación hacia ambos lados.
+- "flux_on": Indica si se debe considerar el valor del parametro "flux"
+- "flux": Flujo constante incidente (\\(\frac{W}{m^2}\\)).
+- "initial_temperature_on": Indica si se debe considerar el valor del parametro "initital_temperature"
+- "initial_temperature": Temperatura inicial (\\(W\\)).
+- "two_sides_radiation": Indica si los elementos emiten radiación hacia ambos lados.
 
-Los parámetros `flux_on`, `flux`, `initial_temperature_on` e `initial_temperature` pueden ser alterados manualmente sin necesidad de volver a ejecutar el preprocesador. 
+Los parámetros "flux_on", "flux", "initial_temperature_on" e "initial_temperature" pueden ser alterados manualmente sin necesidad de volver a ejecutar el preprocesador.
 
 ## Tiempo de ejecución vs Precisión
 
 La modificación de los distintos parámetros implica, en general, un tradeoff entre el tiempo de ejecución y precisión. Aquellos parámetros que tienen impácto en alguna de estas dos variables son:
 
-- `simulation_time`: Al aumentar, incrementa el tiempo de ejecución.
+- "simulation_time": Al aumentar, incrementa el tiempo de ejecución.
 
-- `time_step`: Al disminuir, mejora la precisión de la simulación,  a costa de un mayor tiempo de ejecución.
+- "time_step": Al disminuir, mejora la precisión de la simulación, a costa de un mayor tiempo de ejecución.
 
-- `snap_period`: Al disminuir, mejor será la resolución de datos extraidos de la simulación, a costa de un mayor tiempo de ejecución.
+- "snap_period": Al disminuir, mejor será la resolución de datos extraidos de la simulación, a costa de un mayor tiempo de ejecución.
 
-- `orbit_divisions`: Al aumentar, mejor será la discretización de la órbita y con ello la precisión de la simulación, a costa de un mayor tiempo de ejecución.
+- "orbit_divisions": Al aumentar, mejor será la discretización de la órbita y con ello la precisión de la simulación, a costa de un mayor tiempo de ejecución.
 
 - Cantidad de elementos en malla: Al aumentar, mejor será la discretización del modelo y con ello la precisión de la simulación, a costa de un mayor tiempo de ejecución.
-

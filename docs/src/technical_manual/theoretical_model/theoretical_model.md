@@ -56,9 +56,7 @@ Donde:
 - \\(σ\\) es la constante de Stefan-Boltzmann (\\(5.63 \times 10^{-8} \frac{W}{m^2 K^4}\\))
 - \\(T\\) es la temperatura del cuerpo negro \\([K]\\)
 
-<br/>
 Multiplicando por el area radiante \\(A^r\\), se obtendrá el calor absoluto emitido por el cuerpo negro \\(E_r [W]\\):
-<br/><br/>
 
 \\[
 E_r = A^r \sigma \ T^4
@@ -101,7 +99,7 @@ En un sistema espacial existen, generalmente, tres fuentes de calor:
 - Radiación del sol.
 - Radiación de albedo.
 - Radiación infrarroja terrestre.
-<br/><br/>
+  <br/><br/>
 
 ![](images/image3.png)
 
@@ -164,8 +162,8 @@ Además de recibir energía por radiación del sol y la tierra, un satélite emi
 Tratandose de un cuerpo gris, el flujo de calor emitido por una superficie del satélite estará dado por:
 <br/><br/>
 
-\\[ 
-f_{Lost} = \alpha^{IR} A^r \sigma \ T^4 
+\\[
+f_{Lost} = \alpha^{IR} A^r \sigma \ T^4
 \\]
 <br/>
 
