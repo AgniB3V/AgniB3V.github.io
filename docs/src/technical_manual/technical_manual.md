@@ -10,4 +10,4 @@ En el manual técnico se tratarán los siguientes temas:
 - [Solver](./solver/solver.md)
   - [Modelo teórico](./theoretical_model/theoretical_model.md)
   - [Modelo FEM](./fem/fem.md)
-  - [Paralelización](./gpu_parallelization/gpu_parallelization.md)
+  - [Resolución de sistemas de ecuaciones](./solver/equation_system_solve/equation_system_solve.md)

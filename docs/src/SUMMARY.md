@@ -27,4 +27,4 @@
   - [Solver](./technical_manual/solver/solver.md)
     - [Modelo teórico](./technical_manual/theoretical_model/theoretical_model.md)
     - [Modelo FEM](./technical_manual/fem/fem.md)
-    - [Paralelización en GPU](./technical_manual/gpu_parallelization/gpu_parallelization.md)
+    - [Resolución de sistemas de ecuaciones](./technical_manual/solver/equation_system_solve/equation_system_solve.md)
