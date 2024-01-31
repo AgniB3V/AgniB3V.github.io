@@ -44,11 +44,20 @@ En el estado actual del sistema solo se permiten orbitas circulares y aptitud de
 Se deja a discreción del usuario la verificación de la precisión de los resultados generados por el presente software por fuera de los benchmarks, especialmente en el cálculo del albedo. Se recomienda utilizar el software con cautela.
 
 
+## Desarrollo y Uso
+
+El código del proyecto puede ser encontrado en su [repositorio de GitHub](https://github.com/JulianVentura/TrabajoProfesional).
+
+Para instrucciones detalladas sobre cómo instalar y ejecutar el software como desarrollador, consulte las pautas adjuntas en el repositorio.
+
+Para instalar AgniB3V como usuario final, se recomienda leer las [instrucciones de instalación](./user_manual/installation/installation.md) en la sección correspondiente del manual del usuario.
+
+
 ## Autores
 
 Este trabajo fue realizado bajo el marco del Trabajo Profesional de Ingeniería Informática de la Univesidad de Buenos Aires.
 
-Los integrantes del equipo que realizó este proyecto son:
+Los integrantes del equipo son:
 
 - Barreneche Franco
 - Belinche Gianluca
