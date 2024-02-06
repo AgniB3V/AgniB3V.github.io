@@ -1,6 +1,4 @@
-# Agni B3V
-
-
+<center><img src="images/agni.png" width=250 ...></center>
 
 Agni B3V es una solución integral para el modelado, simulación e interpretación de los fenómenos térmicos que afectan a los satélites.
 
