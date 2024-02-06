@@ -1,7 +1,5 @@
 # Preprocesador
 
-
-
 ## Referencia rápida
 
 Uso general
@@ -25,8 +23,7 @@ python3 main.py viewn ./proyectos/satelite
 
 ## Estructura de properties.json
 
-El archivo properties.json presenta tres secciones principales "global_properties", "materials" y "conditions"
-
+El archivo `properties.json` presenta tres secciones principales "global_properties", "materials" y "conditions"
 
 
 ### Propiedades globales
@@ -83,14 +80,16 @@ El archivo properties.json presenta tres secciones principales "global_propertie
 }
 ```
 
-Se divide en dos subsecciones.  "elements", en donde se indica un array con los ids de los elementos a los que correspondenen y "properties", donde se especifican las características físicas de los materiales:
+Se divide en dos subsecciones, siendo la primera "properties", en donde se especifican las caracteristicas físicas de los materiales y la segunda "elements", en donde se indica a través de un arreglo a qué elementos corresponden dichos materiales.
 
-* "thermal_conductivity": Conductividad térmica (\\( \frac{W}{m . K}\\)).
-* "specific_heat": Calor específico (\\( \frac{J}{kg . K}\\)).
-* "density": Densidad (\\( \frac{kg}{m^3}\\)).
-* "thickness": Grosor (\\(m\\)).
-* "alpha_sun": Absorptividad en frecuencias del espectro solar. Escalar positivo menor a uno.
-* "alpha_ir": Absorptividad en el espectro infrarojo. Escalar positivo menor a uno.
+Las propiedades de los materiales son:
+
+- "thermal_conductivity": Conductividad térmica (\\( \frac{W}{m . K}\\)).
+- "specific_heat": Calor específico (\\( \frac{J}{kg . K}\\)).
+- "density": Densidad (\\( \frac{kg}{m^3}\\)).
+- "thickness": Grosor (\\(m\\)).
+- "alpha_sun": Absortividad en frecuencias del espectro solar. Escalar positivo menor a uno.
+- "alpha_ir": Absortividad en el espectro infrarojo. Escalar positivo menor a uno.
 
 ### Conditions
 ```
@@ -111,28 +110,30 @@ Se divide en dos subsecciones.  "elements", en donde se indica un array con los 
 }
 ```
 
-Se divide en dos subsecciones.  "elements", en donde se indica un array con los ids de los elementos a los que correspondenen y "properties", donde se especifican las condiciones específicas:
+Se divide en dos subsecciones, siendo la primera "properties", en donde se especifican las características de las condiciones y la segunda "elements", en donde se indica a través de un arreglo a qué elementos corresponden dichas condiciones.
 
-* "flux_on": Considerar valor de flujo inicidente. Booleano.
-* "flux": Flujo constante incidente (\\( \frac{W}{m^2}\\)).
-* "initial_temperature_on": Considerar valor de temperatura inicial. Booleano.
-* "initial_temperature": Temperatura inicial del elemento(\\(K\\)).
-* "two_sides_emission": Indica si debe considerarse la orientación del elemento (dirección de su normal según la regla de la mano derecha) al proyectar rayos elemento a elemento.
+Las características de una condición son:
+
+- "flux_on": Considerar valor de flujo inicidente. Booleano.
+- "flux": Flujo constante incidente (\\( \frac{W}{m^2}\\)).
+- "initial_temperature_on": Considerar valor de temperatura inicial. Booleano.
+- "initial_temperature": Temperatura inicial del elemento(\\(K\\)).
+- "two_sides_radiation": Indica si debe considerarse la orientación del elemento (dirección de su normal según la regla de la mano derecha) al proyectar rayos elemento a elemento.
 
 ## Procesamiento de factores de vista
 
-**Archivos necesarios:** mesh.vtk, properties.json, ReportFile.txt, EclipseLocator.txt
+**Archivos necesarios:** `mesh.vtk`, `properties.json`, `ReportFile.txt`, `EclipseLocator.txt`
 
 Calcula factores de vista entre elementos del satélite, Tierra y el Sol.
 
 <center><img src="images/process.png" ...></center>
 <center><i> Ejecución de ejemplo de operación process </i></center>
 
-Almacena los resultados en un archivo binario view_factors.vf.
+Almacena los resultados en un archivo binario `view_factors.vf`.
 
 ## Visualización de materiales
 
-**Archivos necesarios:** mesh.vtk, properties.json
+**Archivos necesarios:** `mesh.vtk`, `properties.json`
 
 Muestra en tres dimensiones los materiales asignados a cada elemento sobre el modelo.
 
@@ -141,7 +142,7 @@ Muestra en tres dimensiones los materiales asignados a cada elemento sobre el mo
 
 ## Visualización de orientación de normales
 
-**Archivos necesarios:** mesh.vtk
+**Archivos necesarios:** `mesh.vtk`
 
 Muestra en tres dimensiones la orientación (dirección de la normal) de cada elemento sobre el modelo.
 

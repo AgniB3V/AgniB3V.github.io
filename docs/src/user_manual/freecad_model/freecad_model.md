@@ -17,7 +17,7 @@ Aquí se encontrarán elementos para crear como cubos, cilindros, esferas, etc. 
 <center><img src="images/freecad3.png" ...></center>
 <center><i></i></center>
 
-Para mover los elementos, se debe seleccionar uno de ellos, hacer click derecho y presionar en "Transform".
+Para mover los elementos, se debe seleccionar uno de ellos, hacer click derecho y presionar en *"Transform"*.
 
 <center><img src="images/freecad4.png" ...></center>
 <center><i></i></center>
@@ -27,7 +27,7 @@ Una vez movidos, se verá un resultado como el siguiente:
 <center><img src="images/freecad5.png" ...></center>
 <center><i></i></center>
 
-Para cambiar el tamaño de los elementos, se debe seleccionar en el elemento deseado y, en la pestaña de "Data", variar radio, longitud, entre otros.
+Para cambiar el tamaño de los elementos, se debe seleccionar en el elemento deseado y, en la pestaña de *"Data"*, variar radio, longitud, entre otros.
 
 <center><img src="images/freecad6.png" ...></center>
 <center><i></i></center>
@@ -57,11 +57,13 @@ Finalmente, se podrá visualizar el resultado final del modelo básico creado:
 
 ## Macro WorkFeature (recomendada)
 
-Se recomienda el uso de la macro WorkFeature para la verificación de la orientación de las normales en tiempo de modelado. Para su instalación y tutoriales visitar <https://github.com/Rentlau/WorkFeature/tree/master>.
+Se recomienda el uso de la macro WorkFeature para la verificación de la orientación de las normales en tiempo de modelado. 
+Para su instalación y tutoriales visitar <https://github.com/Rentlau/WorkFeature/tree/master>.
 
 ## Tutoriales
 
-Para profundizar en la realización de modelos más complejos, recomendamos buscar entre los diversos tutoriales que hay en la wiki de freecad, los foros de freecad y youtube. Dejamos algunos enlaces para comenzar:
+Para profundizar en la realización de modelos más complejos, se recomienda buscar entre los diversos tutoriales que hay en la wiki de freecad, los foros de freecad y youtube. 
+Se brindan algunos enlaces para comenzar:
 
 - <https://wiki.freecad.org/Getting_started>
 - <https://wiki.freecad.org/Basic_modeling_tutorial>

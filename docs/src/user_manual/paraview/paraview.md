@@ -19,7 +19,7 @@ O bien click derecho dentro del recuadro Pipeline Browser
 <center><img src="https://github.com/ThermalB3V/ThermalB3V.github.io/assets/39842759/58c7383c-3994-4dde-89b8-6a3bffa64763"></center>
 <center><i></i></center>
 
-Se abrirá una ventana en la cuál podrán buscar los archivos de resultados, una vez en la carpeta donde estos se encuentran, se debera seleccionar el archivo .vtk.series
+Se abrirá una ventana en la cuál podrán buscar los archivos de resultados, una vez en la carpeta donde estos se encuentran, se debera seleccionar el archivo `*.vtk.series`
 
 <center><img src="https://github.com/ThermalB3V/ThermalB3V.github.io/assets/39842759/b9213e4e-99cc-44a3-b58b-6bf3e5fd7b10"></center>
 <center><i></i></center>
@@ -44,7 +44,7 @@ Una vez hecho esto se podrán visualizar los resultados
 
 ## Visualización a lo largo del tiempo
 
-Para poder visualizar las temperaturas a lo largo del tiempo se debe ir View y activar Time Manager
+Para poder visualizar las temperaturas a lo largo del tiempo se debe ir al panel "View" y activar la opción "Time Manager"
 
 <center><img src="https://github.com/ThermalB3V/ThermalB3V.github.io/assets/39842759/6dcc0aae-ec75-45cd-9164-c95b160a7bfc"></center>
 <center><i></i></center>
@@ -75,7 +75,7 @@ Se puede observar a continuación un ejemplo de como cambia el rango de temperat
 ## Herramiente de Querys
 
 Se recomienda el uso del siguiente panel para realizar consultas especificas sobre los datos.
-Se debe ir a View y activar Find Data
+Se debe ir al panel "View" y activar la opción "Find Data"
 
 <center><img src="https://github.com/ThermalB3V/ThermalB3V.github.io/assets/39842759/0a1ceacc-3ce9-4047-ac35-27276aa889bf"></center>
 <center><i></i></center>
@@ -85,7 +85,7 @@ El cual abre el siguiente panel
 <center><img src="https://github.com/ThermalB3V/ThermalB3V.github.io/assets/39842759/ad997ca9-a42c-48f9-ae89-8e9d170e84b9"></center>
 <center><i></i></center>
 
-Se debe seleccionar en Data Producer el vtk.series
+Se debe seleccionar en "Data Producer" el archov `*.vtk.series`
 
 <center><img src="https://github.com/ThermalB3V/ThermalB3V.github.io/assets/39842759/2eb90d9c-b5fa-439f-a3fb-bdef24cf863a"></center>
 <center><i></i></center>
@@ -105,7 +105,7 @@ Luego se puede elegir la condición de busqueda y ingresar el valor
 <center><img src="https://github.com/ThermalB3V/ThermalB3V.github.io/assets/39842759/d0f210dd-2246-4288-bf76-b1123cf9dca3"></center>
 <center><i></i></center>
 
-Al clickear Find Data se realiza la busqueda
+Al hacer presionar "Find Data" se realiza la busqueda
 
 <center><img src="https://github.com/ThermalB3V/ThermalB3V.github.io/assets/39842759/986f72ea-4326-4983-975d-b9df3fba620a"></center>
 <center><i></i></center>
