@@ -6,12 +6,12 @@ Debido a la poca distancia que los separa, el satélite interactúa con la Tierr
 
 El cociente entre rayos que alcanzaron la Tierra y rayos totales es fue una buena primera aproximación del factor de vista elemento-Tierra para radiación, pero no considera la curvatura de la Tierra, ni el ángulo de incidencia del rayo en el elemento. Para incorporar ambos factores se acabó realizando el promedio ponderado de los rayos, tomando como peso la multiplicación del producto interno entre vector satélite-Tierra y rayo (que brinda información del punto de procedencia del rayo) y el producto interno entre la normal del elemento y el rayo (análogo a la corrección por área aparente solar):
 
-\\[ f^{\text{IR}}_{j} = \frac{1}{R _T} \sum^{R _I} _{i = 0} (r _i . v _{se})(r _i .n _j) \\]
+\\[ F^{\text{IR}}_{j} = \frac{1}{R _T} \sum^{R _I} _{i = 0} (r _i . v _{se})(r _i .n _j) \\]
 
 
 Donde:
 
-* \\(f^{\text{IR}}_{j}\\) es el factor de vista del elemento \\(j\\) a la Tierra para la radiación infrarroja.
+* \\(F^{\text{IR}}_{j}\\) es el factor de vista del elemento \\(j\\) a la Tierra para la radiación infrarroja.
 * \\(R _T\\) es la cantidad de rayos disparados por el método.
 * \\(R _I\\) es la cantidad de rayos disparados que impactaron a la Tierra.
 * \\(r _i\\) Es el iésimo rayo impactado.
@@ -34,11 +34,13 @@ Como los rayos son emitidos desde el satélite hacia la Tierra en el cómputo, e
 
 Es importante notar que la abrupta transición entre zonas iluminadas y en umbra es consecuencia del mapeo elegido entre producto interno e intensidad de luz (aquí la función de Heavyside). Puede suavizarse la transición entre zona iluminada y umbra e introducir así el efecto de scattering atmosférico, pero no se observó que impactase en los resultados significativamente.
 
-\\[ vf^{Albedo}_{j} = \frac{1}{R _T} \sum^{R _I} _{i = 0} (r _i.v _{es}) \\]
+\\[ F^{Albedo}_{j} = \frac{1}{R _T} \sum^{R _I} _{i = 0} u(r _i.v _{es}) (r _i.v _{es}) (r _i .n _j) \\]
 
 Donde:
-* \\(vf^{Albedo}_{j}\\) es el factor de vista del elemento \\(j\\) a la Tierra para la radiación por albedo.
+* \\(F^{Albedo}_{j}\\) es el factor de vista del elemento \\(j\\) a la Tierra para la radiación por albedo.
 * \\(R _T\\) es la cantidad de rayos disparados por el método.
 * \\(R _I\\) es la cantidad de rayos disparados que impactaron a la Tierra.
-* \\(r _i\\) Es el iésimo rayo impactado.
+* \\(r _i\\) Es el iésimo rayo impactado, con la rotación mencionada ya aplicada.
 * \\(v _{es}\\) Es el vector unitario en dirección al Sol, tomando la posición de la Tierra como origen de coordenadas.
+* \\(n _j\\) Es la normal del elemento \\(j\\).
+* \\(u \\) Es la función de Heaviside.
