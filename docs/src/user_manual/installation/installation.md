@@ -1,6 +1,6 @@
 # Instalación
 
-Se provee un instalador para el software, el cual puede ser encontrado en el [último release](https://github.com/JulianVentura/TrabajoProfesional/releases) del repositorio del proyecto. Este software fue probado para el sistema operativo Ubuntu 22.04 LTS.
+Se provee un instalador para el software, el cual puede ser encontrado en el [último release](https://github.com/JulianVentura/AgniB3V/releases) del repositorio del proyecto. Este software fue probado para el sistema operativo Ubuntu 22.04 LTS.
 
 Para realizar la instalación, descargar el archivo `AgniB3V-v1.0.0.zip` y moverlo al directorio deseado. Hacer click derecho sobre alguna región vacía del directorio actual y elegir la opción _"Abrir en una terminal"_.
 En la terminal, escribir uno a uno los siguientes comandos:

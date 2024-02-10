@@ -44,7 +44,7 @@ Se deja a discreción del usuario la verificación de la precisión de los resul
 
 ## Desarrollo y Uso
 
-El código del proyecto puede ser encontrado en su [repositorio de GitHub](https://github.com/JulianVentura/TrabajoProfesional).
+El código del proyecto puede ser encontrado en su [repositorio de GitHub](https://github.com/JulianVentura/AgniB3V).
 
 Para instrucciones detalladas sobre cómo instalar y ejecutar el software como desarrollador, consulte las pautas adjuntas en el repositorio.
 
